@@ -136,7 +136,7 @@ const HomePage = () => {
 
                     <CardFooter className="pt-6">
                         <CreateInvoiceBtn
-                            amount={10}
+                            amount={80000}
                             redirectUrl="stickers"
                             comment=" Пак матеріалів для анімаційного монтажу"
                             destination=" Пак матеріалів для анімаційного монтажу"
