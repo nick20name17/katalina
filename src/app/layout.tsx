@@ -35,7 +35,10 @@ const RootLayout = ({ children }: PropsWithChildren) => {
                 <Header />
                 <main className="flex-1 ">{children}</main>
                 <Footer />
-                <Toaster />
+                <Toaster
+                    richColors
+                    duration={6000}
+                />
                 <DotPattern className="opacity-50 fixed inset-0 z-[1]" />
             </body>
         </html>
