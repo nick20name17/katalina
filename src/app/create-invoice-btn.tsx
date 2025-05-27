@@ -17,7 +17,7 @@ export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
     const handleClick = async () => {
         const data = await createInvoice(props)
         if (data.pageUrl) {
-            window.open(data.pageUrl, '_blank', 'noopener,noreferrer')
+            window.open(data.pageUrl)
         } else {
             alert('Не вдалося отримати посилання на оплату')
         }

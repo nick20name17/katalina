@@ -241,7 +241,7 @@ const HomePage = () => {
                                 </span>
                             </div>
                             <ul className="text-sm text-slate-500 space-y-1">
-                                <li>• пак для анімаційного монтажу </li>
+                                <li>• пак для анімаційного монтажу у подарунок</li>
                             </ul>
                         </div>
                     </CardContent>
