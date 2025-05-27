@@ -4,6 +4,7 @@ import { createInvoice } from '@/actions/create-invoice'
 import { ShinyButton } from '@/components/ui/shiny-button'
 import { Loader } from 'lucide-react'
 import { useTransition } from 'react'
+import { toast } from 'sonner'
 
 interface CreateInvoiceBtnProps {
     amount: number
@@ -19,7 +20,7 @@ export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
         if (data.pageUrl) {
             window.open(data.pageUrl)
         } else {
-            alert('Не вдалося отримати посилання на оплату')
+            toast.error('Не вдалося отримати посилання на оплату')
         }
     }
     return (
