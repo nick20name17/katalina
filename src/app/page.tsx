@@ -138,8 +138,8 @@ const HomePage = () => {
                         <CreateInvoiceBtn
                             amount={80000}
                             redirectUrl="stickers"
-                            comment=" Пак матеріалів для анімаційного монтажу"
-                            destination=" Пак матеріалів для анімаційного монтажу"
+                            comment="Пак матеріалів для анімаційного монтажу"
+                            destination="Доступ до Паку матеріалів для анімаційного монтажу"
                         />
                     </CardFooter>
                 </Card>
@@ -251,7 +251,7 @@ const HomePage = () => {
                             amount={170000}
                             redirectUrl="community"
                             comment="Телеграм-комʼюніті"
-                            destination="Телеграм-комʼюніті"
+                            destination="Доступ до Телеграм-комʼюніті"
                         />
                     </CardFooter>
                 </Card>
