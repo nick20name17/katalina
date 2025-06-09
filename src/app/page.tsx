@@ -75,6 +75,11 @@ const HomePage = () => {
                         <Heart className="w-6 h-6" />
                     </div>
 
+                    <Badge className="absolute -top-3 -left-3 text-slate-600  text-sm">
+                        <Heart className="size-4" />
+                        -50%
+                    </Badge>
+
                     <Caption />
 
                     <CardHeader className="text-center space-y-4 pb-6">
@@ -87,9 +92,12 @@ const HomePage = () => {
                                 Пак матеріалів для анімаційного монтажу
                             </CardTitle>
                         </div>
-                        <div className="flex items-baseline justify-center space-x-1 relative">
-                            <span className="text-4xl font-semibold text-slate-700">
+                        <div className="flex items-end justify-center space-x-1 relative">
+                            <span className="text-lg line-through text-slate-500">
                                 800
+                            </span>
+                            <span className="text-4xl font-semibold text-slate-700">
+                                400
                             </span>
                             <span className="text-slate-400">UAH</span>
                             <svg
@@ -136,9 +144,9 @@ const HomePage = () => {
 
                     <CardFooter className="pt-6">
                         <CreateInvoiceBtn
-                            amount={80000}
+                            amount={40000}
                             redirectUrl="stickers"
-                            comment="Пак матеріалів для анімаційного монтажу"
+                            comment="Доступ до Паку матеріалів для анімаційного монтажу"
                             destination="Доступ до Паку матеріалів для анімаційного монтажу"
                         />
                     </CardFooter>
@@ -250,7 +258,7 @@ const HomePage = () => {
                         <CreateInvoiceBtn
                             amount={170000}
                             redirectUrl="community"
-                            comment="Телеграм-комʼюніті"
+                            comment="Доступ до Телеграм-комʼюніті"
                             destination="Доступ до Телеграм-комʼюніті"
                         />
                     </CardFooter>
