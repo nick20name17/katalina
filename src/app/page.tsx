@@ -75,10 +75,10 @@ const HomePage = () => {
                         <Heart className="w-6 h-6" />
                     </div>
 
-                    <Badge className="absolute -top-3 -left-3 text-slate-600  text-sm">
+                    {/* <Badge className="absolute -top-3 -left-3 text-slate-600  text-sm">
                         <Heart className="size-4" />
                         -50%
-                    </Badge>
+                    </Badge> */}
 
                     <Caption />
 
@@ -93,11 +93,11 @@ const HomePage = () => {
                             </CardTitle>
                         </div>
                         <div className="flex items-end justify-center space-x-1 relative">
-                            <span className="text-lg line-through text-slate-500">
+                            {/* <span className="text-lg line-through text-slate-500">
                                 800
-                            </span>
+                            </span> */}
                             <span className="text-4xl font-semibold text-slate-700">
-                                400
+                                800
                             </span>
                             <span className="text-slate-400">UAH</span>
                             <svg
@@ -144,7 +144,7 @@ const HomePage = () => {
 
                     <CardFooter className="pt-6">
                         <CreateInvoiceBtn
-                            amount={40000}
+                            amount={80000}
                             redirectUrl="stickers"
                             comment="Доступ до Паку матеріалів для анімаційного монтажу"
                             destination="Доступ до Паку матеріалів для анімаційного монтажу"
