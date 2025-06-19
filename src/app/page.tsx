@@ -67,90 +67,6 @@ const HomePage = () => {
     return (
         <div className="container mx-auto max-w-screen-xl">
             <div className="min-h-screen bg-background py-8 px-14 flex items-start justify-center gap-10 max-md:flex-col max-md:items-center">
-                <Card className="w-full max-w-md bg-[#FAF6F1] border-2 border-primary/30 shadow-lg relative  z-10">
-                    <div className="absolute top-4 right-4 text-primary/60">
-                        {/* <HandwrittenFlower className="w-8 h-8" /> */}
-                    </div>
-                    <div className="absolute bottom-4 left-4 text-primary/20">
-                        <Heart className="w-6 h-6" />
-                    </div>
-
-                    {/* <Badge className="absolute -top-3 -left-3 text-slate-600  text-sm">
-                        <Heart className="size-4" />
-                        -50%
-                    </Badge> */}
-
-                    <Caption />
-
-                    <CardHeader className="text-center space-y-4 pb-6">
-                        <div className="space-y-2">
-                            <CardTitle
-                                className={cn(
-                                    'text-2xl font-semibold text-slate-700',
-                                    nightSans.className
-                                )}>
-                                Пак матеріалів для анімаційного монтажу
-                            </CardTitle>
-                        </div>
-                        <div className="flex items-end justify-center space-x-1 relative">
-                            {/* <span className="text-lg line-through text-slate-500">
-                                800
-                            </span> */}
-                            <span className="text-4xl font-semibold text-slate-700">
-                                800
-                            </span>
-                            <span className="text-slate-400">UAH</span>
-                            <svg
-                                className="text-primary absolute top-[55%] left-[44%] -translate-x-1/2 rotate-x-180 "
-                                width="80"
-                                height="40"
-                                viewBox="0 0 228 40"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M1 38.9999C1 25.6093 8.96517 3.32929 10.5 2.5474C13.901 0.814833 18.2208 17.54 41 28C50.0613 32.1609 56.5 13.3137 63.5 6.49999C66.365 3.71126 71.5632 9.38752 95.1069 24.8285C105.366 31.5566 108.77 32.6474 111.272 34.1881C112.602 35.0069 114.156 35.7287 115.517 33.829C126.927 17.9035 135.498 6.69691 138 6.49999C154.172 5.22723 173.986 22.5929 181.706 25.3034C184.332 26.2252 184.84 24.1914 185.036 22.6392C186.01 14.9643 187.156 6.42211 190.237 2.54738C194.109 -2.32137 202.586 5.61125 215.878 12.5498C218.814 14.1136 219.961 14.8782 221.125 15.8454C222.289 16.8126 223.436 17.9594 226.934 20.2993"
-                                    stroke="currentColor"
-                                    strokeWidth="5"
-                                    strokeLinecap="round"
-                                />
-                            </svg>
-                        </div>
-                    </CardHeader>
-
-                    <CardContent className="space-y-6">
-                        <div className="space-y-2">
-                            <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
-                                </div>
-                                <span className="text-slate-600">футажі;</span>
-                            </div>
-
-                            <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
-                                </div>
-                                <span className="text-slate-600">фони;</span>
-                            </div>
-
-                            <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
-                                </div>
-                                <span className="text-slate-600">стікери</span>
-                            </div>
-                        </div>
-                    </CardContent>
-
-                    <CardFooter className="pt-6">
-                        <CreateInvoiceBtn
-                            amount={80000}
-                            redirectUrl="stickers"
-                            comment="Доступ до Паку матеріалів для анімаційного монтажу"
-                            destination="Доступ до Паку матеріалів для анімаційного монтажу"
-                        />
-                    </CardFooter>
-                </Card>
                 <Card className="w-full max-w-md bg-[#FAF6F1] border-2 border-primary shadow-lg relative  z-10">
                     <div className="absolute top-4 right-4 text-primary/60">
                         {/* <HandwrittenFlower className="w-8 h-8" /> */}
@@ -260,6 +176,90 @@ const HomePage = () => {
                             redirectUrl="community"
                             comment="Доступ до Телеграм-комʼюніті"
                             destination="Доступ до Телеграм-комʼюніті"
+                        />
+                    </CardFooter>
+                </Card>
+                <Card className="w-full max-w-md bg-[#FAF6F1] border-2 border-primary/30 shadow-lg relative  z-10">
+                    <div className="absolute top-4 right-4 text-primary/60">
+                        {/* <HandwrittenFlower className="w-8 h-8" /> */}
+                    </div>
+                    <div className="absolute bottom-4 left-4 text-primary/20">
+                        <Heart className="w-6 h-6" />
+                    </div>
+
+                    {/* <Badge className="absolute -top-3 -left-3 text-slate-600  text-sm">
+                        <Heart className="size-4" />
+                        -50%
+                    </Badge> */}
+
+                    <Caption />
+
+                    <CardHeader className="text-center space-y-4 pb-6">
+                        <div className="space-y-2">
+                            <CardTitle
+                                className={cn(
+                                    'text-2xl font-semibold text-slate-700',
+                                    nightSans.className
+                                )}>
+                                Пак матеріалів для анімаційного монтажу
+                            </CardTitle>
+                        </div>
+                        <div className="flex items-end justify-center space-x-1 relative">
+                            {/* <span className="text-lg line-through text-slate-500">
+                                800
+                            </span> */}
+                            <span className="text-4xl font-semibold text-slate-700">
+                                800
+                            </span>
+                            <span className="text-slate-400">UAH</span>
+                            <svg
+                                className="text-primary absolute top-[55%] left-[44%] -translate-x-1/2 rotate-x-180 "
+                                width="80"
+                                height="40"
+                                viewBox="0 0 228 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 38.9999C1 25.6093 8.96517 3.32929 10.5 2.5474C13.901 0.814833 18.2208 17.54 41 28C50.0613 32.1609 56.5 13.3137 63.5 6.49999C66.365 3.71126 71.5632 9.38752 95.1069 24.8285C105.366 31.5566 108.77 32.6474 111.272 34.1881C112.602 35.0069 114.156 35.7287 115.517 33.829C126.927 17.9035 135.498 6.69691 138 6.49999C154.172 5.22723 173.986 22.5929 181.706 25.3034C184.332 26.2252 184.84 24.1914 185.036 22.6392C186.01 14.9643 187.156 6.42211 190.237 2.54738C194.109 -2.32137 202.586 5.61125 215.878 12.5498C218.814 14.1136 219.961 14.8782 221.125 15.8454C222.289 16.8126 223.436 17.9594 226.934 20.2993"
+                                    stroke="currentColor"
+                                    strokeWidth="5"
+                                    strokeLinecap="round"
+                                />
+                            </svg>
+                        </div>
+                    </CardHeader>
+
+                    <CardContent className="space-y-6">
+                        <div className="space-y-2">
+                            <div className="flex items-center space-x-3">
+                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="w-3 h-3 text-slate-600" />
+                                </div>
+                                <span className="text-slate-600">футажі;</span>
+                            </div>
+
+                            <div className="flex items-center space-x-3">
+                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="w-3 h-3 text-slate-600" />
+                                </div>
+                                <span className="text-slate-600">фони;</span>
+                            </div>
+
+                            <div className="flex items-center space-x-3">
+                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="w-3 h-3 text-slate-600" />
+                                </div>
+                                <span className="text-slate-600">стікери</span>
+                            </div>
+                        </div>
+                    </CardContent>
+
+                    <CardFooter className="pt-6">
+                        <CreateInvoiceBtn
+                            amount={80000}
+                            redirectUrl="stickers"
+                            comment="Доступ до Паку матеріалів для анімаційного монтажу"
+                            destination="Доступ до Паку матеріалів для анімаційного монтажу"
                         />
                     </CardFooter>
                 </Card>
