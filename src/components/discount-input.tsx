@@ -1,6 +1,6 @@
 'use client'
 
-import { CirclePlus } from 'lucide-react'
+import { CirclePlus, Loader } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { toast } from 'sonner'
 import { Button } from './ui/button'
@@ -10,15 +10,18 @@ interface DiscountInputProps {
     success: boolean
     setSuccess: (success: boolean) => void
 }
+
 export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
     const [showPromoCode, setShowPromoCode] = useState(false)
     const [promocode, setPromocode] = useState('')
     const [error, setError] = useState('')
+    const [loading, setLoading] = useState(false)
     const inputRef = useRef<HTMLInputElement | null>(null)
 
     const handleApply = async () => {
         setError('')
         setSuccess(false)
+        setLoading(true)
 
         const code = promocode.trim().toLowerCase()
         try {
@@ -39,6 +42,8 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
         } catch (err) {
             setError('Помилка перевірки промокоду')
             toast.error('Помилка перевірки промокоду')
+        } finally {
+            setLoading(false)
         }
     }
 
@@ -49,7 +54,7 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
     }
 
     const handleKeyDown = (e: any) => {
-        if (e.key === 'Enter' && promocode.trim()) {
+        if (e.key === 'Enter' && promocode.trim() && !loading) {
             handleApply()
         }
     }
@@ -81,18 +86,26 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
                             onKeyDown={handleKeyDown}
                             placeholder="Введіть промокод"
                             type="text"
-                            className={`text-xs w-[60%] ${success ? 'border-green-500' : ''} ${error ? 'border-destructive' : ''}`}
+                            className={`text-xs w-[60%] ${
+                                success ? 'border-green-500' : ''
+                            } ${error ? 'border-destructive' : ''}`}
                             inputMode="text"
                             aria-label="Промокод"
-                            disabled={success}
+                            disabled={success || loading}
                             autoComplete="off"
                         />
                         <Button
                             className="w-[40%]"
                             variant={success ? 'success' : 'outline'}
                             onClick={handleApply}
-                            disabled={!promocode.trim() || success}>
-                            {success ? 'Застосовано' : 'Застосувати'}
+                            disabled={!promocode.trim() || success || loading}>
+                            {loading ? (
+                                <Loader className="animate-spin" />
+                            ) : success ? (
+                                'Застосовано'
+                            ) : (
+                                'Застосувати'
+                            )}
                         </Button>
                     </div>
                 </>
