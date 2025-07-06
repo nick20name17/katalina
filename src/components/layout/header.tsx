@@ -4,7 +4,7 @@ import { Countdown } from '../ui/countdown'
 
 export const Header = () => {
     return (
-        <header className="container max-w-screen-xl mx-auto py-10">
+        <header className="container max-w-screen-xl mx-auto py-10 px-6">
             <div className="relative w-fit mx-auto">
                 <h1
                     className={cn(
