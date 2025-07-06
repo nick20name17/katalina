@@ -49,14 +49,14 @@
     --card-foreground: oklch(0.129 0.042 264.695);
     --popover: #fcfcf1;
     --popover-foreground: oklch(0.129 0.042 264.695);
-    --primary: #f3d1ea;
+    --primary: #fbd7ed;
     --primary-foreground: #fdffff;
     --secondary: oklch(0.968 0.007 247.896);
-    --secondary-foreground: #f3d1ea;
+    --secondary-foreground: #fbd7ed;
     --muted: oklch(0.968 0.007 247.896);
     --muted-foreground: oklch(0.554 0.046 257.417);
     --accent: oklch(0.968 0.007 247.896);
-    --accent-foreground: #f3d1ea;
+    --accent-foreground: #fbd7ed;
     --destructive: oklch(0.577 0.245 27.325);
     --border: oklch(0.929 0.013 255.508);
     --input: oklch(0.929 0.013 255.508);
@@ -68,10 +68,10 @@
     --chart-5: oklch(0.769 0.188 70.08);
     --sidebar: #fdffff;
     --sidebar-foreground: oklch(0.129 0.042 264.695);
-    --sidebar-primary: #f3d1ea;
+    --sidebar-primary: #fbd7ed;
     --sidebar-primary-foreground: #fdffff;
     --sidebar-accent: oklch(0.968 0.007 247.896);
-    --sidebar-accent-foreground: #f3d1ea;
+    --sidebar-accent-foreground: #fbd7ed;
     --sidebar-border: oklch(0.929 0.013 255.508);
     --sidebar-ring: oklch(0.704 0.04 256.788);
 }
@@ -79,12 +79,12 @@
 .dark {
     --background: oklch(0.129 0.042 264.695);
     --foreground: #fdffff;
-    --card: #f3d1ea;
+    --card: #fbd7ed;
     --card-foreground: #fdffff;
-    --popover: #f3d1ea;
+    --popover: #fbd7ed;
     --popover-foreground: #fdffff;
     --primary: oklch(0.929 0.013 255.508);
-    --primary-foreground: #f3d1ea;
+    --primary-foreground: #fbd7ed;
     --secondary: oklch(0.279 0.041 260.031);
     --secondary-foreground: #fdffff;
     --muted: oklch(0.279 0.041 260.031);
@@ -100,7 +100,7 @@
     --chart-3: oklch(0.769 0.188 70.08);
     --chart-4: oklch(0.627 0.265 303.9);
     --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: #f3d1ea;
+    --sidebar: #fbd7ed;
     --sidebar-foreground: #fdffff;
     --sidebar-primary: oklch(0.488 0.243 264.376);
     --sidebar-primary-foreground: #fdffff;
@@ -112,7 +112,7 @@
 
 @layer base {
     * {
-        @apply border-border outline-ring/50;
+        @apply border-border outline-ring/50 tabular-nums;
     }
     body {
         @apply bg-background text-foreground;

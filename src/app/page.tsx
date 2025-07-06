@@ -91,9 +91,6 @@ const HomePage = () => {
                                 )}>
                                 Телеграм-комʼюніті
                             </CardTitle>
-                            {/* <CardDescription className="text-slate-500 max-sm:text-xs">
-                                Тут корисно та затишно.
-                            </CardDescription> */}
                         </div>
                         <div className="flex items-baseline justify-center space-x-1 relative">
                             <span className="text-4xl font-semibold text-slate-700">

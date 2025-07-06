@@ -1,10 +1,11 @@
 import { nightSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
+import { Countdown } from '../ui/countdown'
 
 export const Header = () => {
     return (
-        <header className="h-20 container max-w-screen-xl mx-auto py-10">
-            <div className="relative  w-fit mx-auto">
+        <header className="container max-w-screen-xl mx-auto py-10">
+            <div className="relative w-fit mx-auto">
                 <h1
                     className={cn(
                         'text-center text-4xl font-bold text-slate-700 leading-6 re',
@@ -17,6 +18,10 @@ export const Header = () => {
                     </div>
                 </h1>
             </div>
+            <Countdown
+                className="mx-auto w-full mt-10 relative z-50"
+                saleEndDate={new Date('2025-07-14T00:00:00')}
+            />
         </header>
     )
 }

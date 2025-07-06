@@ -25,7 +25,7 @@ export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
     }
     return (
         <ShinyButton
-            className="w-full bg-primary hover:bg-primary/ text-slate-700 font-semibold py-3 rounded-lg transition-all duration-200 hover:shadow-md border-none "
+            className="w-full bg-primary h-11 hover:bg-primary/ text-slate-700 font-semibold py-3 rounded-lg transition-all duration-200 hover:shadow-md border-none "
             onClick={() => startTransition(handleClick)}>
             {isPending ? (
                 <Loader className="animate-spin mx-auto size-4 text-background" />
