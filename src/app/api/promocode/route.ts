@@ -4,8 +4,6 @@ export async function POST(req: NextRequest) {
     const { promocode } = await req.json()
     const validPromo = process.env.PROMOCODE!
 
-    console.log(promocode, validPromo)
-
     if (promocode && promocode.trim().toLowerCase() === validPromo?.toLowerCase()) {
         return NextResponse.json({ valid: true })
     } else {
