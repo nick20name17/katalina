@@ -121,29 +121,29 @@ const HomePage = () => {
                     <CardContent className="space-y-6">
                         <div className="space-y-4">
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">туторіали;</span>
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">цікаві фішки;</span>
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">тренди;</span>
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     мій особистий досвід;
@@ -151,8 +151,8 @@ const HomePage = () => {
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">корисні матеріали</span>
                             </div>
@@ -235,22 +235,22 @@ const HomePage = () => {
                     <CardContent className="space-y-6">
                         <div className="space-y-2">
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">футажі;</span>
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">фони;</span>
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">стікери</span>
                             </div>
@@ -319,8 +319,8 @@ const HomePage = () => {
                     <CardContent className="space-y-6">
                         <div className="space-y-2">
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     специфіка зйомки для такого типу відео;
@@ -328,8 +328,8 @@ const HomePage = () => {
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     правила поєднання шрифтів;
@@ -337,16 +337,16 @@ const HomePage = () => {
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     готові шрифтові пари;
                                 </span>
                             </div>
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     де брати натхнення та ідеї;
@@ -428,8 +428,8 @@ const HomePage = () => {
                     <CardContent className="space-y-6">
                         <div className="space-y-2">
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     основа анімаційного дизайну;
@@ -437,8 +437,8 @@ const HomePage = () => {
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     2 способи створення глибини анімації;
@@ -446,8 +446,8 @@ const HomePage = () => {
                             </div>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-5 h-5 bg-primary rounded-full flex items-center justify-center">
-                                    <Check className="w-3 h-3 text-slate-600" />
+                                <div className="size-5 shrink-0 bg-primary rounded-full flex items-center justify-center">
+                                    <Check className="size-3 shrink-0 text-slate-600" />
                                 </div>
                                 <span className="text-slate-600">
                                     2 туторіали на одне відео (для новачків і просунутих)
