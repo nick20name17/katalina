@@ -1,5 +1,6 @@
 'use client'
 
+import { cn } from '@/lib/utils'
 import { CirclePlus, Loader } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { toast } from 'sonner'
@@ -87,9 +88,10 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
                             onKeyDown={handleKeyDown}
                             placeholder="Введіть промокод"
                             type="text"
-                            className={`text-xs w-[60%] ${
-                                success ? 'border-emerald-500' : ''
-                            } ${error ? 'border-destructive' : ''}`}
+                            className={cn('text-xs w-[60%]', {
+                                'border-emerald-500': success,
+                                'border-destructive': error,
+                            })}
                             inputMode="text"
                             aria-label="Промокод"
                             disabled={success || loading}
