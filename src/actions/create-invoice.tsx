@@ -8,13 +8,16 @@ interface CreateInvoiceProps {
     amount: number
     destination: string
     comment: string
-    redirectUrl: 'stickers' | 'community'
+    redirectUrl: 'stickers' | 'community' | 'captions' | 'animation'
 }
 
-const REDIRECT_URL = {
-    stickers: process.env.REDIRECT_URL2,
-    community: process.env.REDIRECT_URL,
-}
+const REDIRECT_URL: Record<'stickers' | 'community' | 'captions' | 'animation', string> =
+    {
+        community: process.env.REDIRECT_URL!,
+        stickers: process.env.REDIRECT_URL2!,
+        captions: process.env.REDIRECT_URL3!,
+        animation: process.env.REDIRECT_URL4!,
+    }
 
 export async function createInvoice({
     amount,
