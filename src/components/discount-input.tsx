@@ -80,6 +80,7 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
                 <>
                     <div className="flex items-center gap-2">
                         <Input
+                            spellCheck={false}
                             ref={inputRef}
                             value={promocode}
                             onChange={handleInputChange}
@@ -87,7 +88,7 @@ export const DiscountInput = ({ setSuccess, success }: DiscountInputProps) => {
                             placeholder="Введіть промокод"
                             type="text"
                             className={`text-xs w-[60%] ${
-                                success ? 'border-green-500' : ''
+                                success ? 'border-emerald-500' : ''
                             } ${error ? 'border-destructive' : ''}`}
                             inputMode="text"
                             aria-label="Промокод"
