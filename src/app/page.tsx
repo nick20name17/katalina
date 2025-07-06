@@ -225,7 +225,8 @@ const HomePage = () => {
                                 </span>
                             </div>
                             <ul className="text-sm text-slate-500 space-y-1">
-                                <li>• всі матеріали до відео для практики</li>
+                                <li>• 10 моїх улюблених шрифтів</li>
+                                <li>• Туторіал «Як розмістити текст позаду людини»</li>
                             </ul>
                         </div>
                     </CardContent>
@@ -326,8 +327,7 @@ const HomePage = () => {
                                 </span>
                             </div>
                             <ul className="text-sm text-slate-500 space-y-1">
-                                <li>• 10 моїх улюблених шрифтів</li>
-                                <li>• Туторіал «Як розмістити текст позаду людини»</li>
+                                <li>• всі матеріали до відео для практики</li>
                             </ul>
                         </div>
                     </CardContent>
