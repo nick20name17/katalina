@@ -77,11 +77,11 @@ export const Countdown = ({ className, saleEndDate }: CountdownProps) => {
                     <div className="flex grow flex-col justify-between gap-3 md:flex-row md:items-center">
                         <div className="space-y-0.5">
                             <p className="text-sm font-medium">
-                                Ще трішки — і ціна стане іншою!
+                                Встигни придбати лекцію по зниженій ціни за фідбек
                             </p>
                             <p className="text-muted-foreground text-sm">
-                                З кожною хвилиною кількість інформації зростає, а разом із
-                                нею — і цінність доступу.
+                                Зараз ти можеш отримати доступ вигідніше та допомогти
+                                зробити продукт ще кращим.
                             </p>
                         </div>
                         <div className="divide-background bg-background font-medium font-mono flex items-center divide-x rounded-md text-sm tabular-nums w-fit">

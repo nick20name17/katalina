@@ -10,7 +10,7 @@ interface CreateInvoiceBtnProps {
     amount: number
     destination: string
     comment: string
-    redirectUrl: 'stickers' | 'community' | 'captions' | 'animation'
+    redirectUrl: 'stickers' | 'community' | 'animation'
 }
 export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
     const [isPending, startTransition] = useTransition()
