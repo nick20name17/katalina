@@ -78,7 +78,7 @@ export const Countdown = ({ className, saleEndDate }: CountdownProps) => {
                         <div className="space-y-0.5">
                             <p className="text-sm font-medium">
                                 Встигни придбати лекцію «Animation design» по зниженій
-                                ціни за фідбек
+                                ціні за фідбек
                             </p>
                             <p className="text-muted-foreground text-sm">
                                 Зараз ти можеш отримати доступ вигідніше та допомогти
