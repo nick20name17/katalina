@@ -15,7 +15,7 @@ import { useState } from 'react'
 import { DiscountInput } from './discount-input'
 import { Badge } from './ui/badge'
 
-const PRICE = 1700
+const PRICE = 2200
 
 const INVOICE_PRICE = PRICE * 100
 
@@ -95,9 +95,9 @@ export const MainCard = () => {
 
                     <span className="text-slate-400">UAH</span>
                 </div>
-                <div className="text-xs text-slate-500">
+                {/* <div className="text-xs text-slate-500">
                     зросте до <span className="font-semibold">2200 UAH</span>
-                </div>
+                </div> */}
             </CardHeader>
 
             <CardContent className="space-y-6">
