@@ -101,6 +101,7 @@ const cardData: CardData[] = [
         title: 'Лекція «Animation design»',
         price: 1300,
         priceIncrease: 1500,
+        promocode: true,
         featuresHeader:
             'Покрокова інструкція про те, як я створюю анімаційні відео від А до Я',
         features: [

@@ -59,7 +59,7 @@ export const PriceCard = ({ card }: { card: CardData }) => {
                                 800
                             </span> */}
                     <span className="text-4xl font-semibold text-slate-700">
-                        {success ? card.price - card.price * 0.05 : card.price}
+                        {success ? card.price - card.price * 0.1 : card.price}
                     </span>
                     <span className="text-slate-400">UAH</span>
                     <svg
@@ -131,7 +131,7 @@ export const PriceCard = ({ card }: { card: CardData }) => {
                 <CreateInvoiceBtn
                     amount={
                         success
-                            ? card.invoice.amount - card.invoice.amount * 0.05
+                            ? card.invoice.amount - card.invoice.amount * 0.1
                             : card.invoice.amount
                     }
                     redirectUrl={card.invoice.redirectUrl}
