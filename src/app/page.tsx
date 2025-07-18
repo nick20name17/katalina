@@ -117,7 +117,7 @@ const cardData: CardData[] = [
             'домашнє завдання + матеріали',
         ],
         invoice: {
-            amount: 130000,
+            amount: 150000,
             redirectUrl: 'animation',
             comment: 'Доступ до Лекції «Animation design»',
             destination: 'Доступ до Лекції «Animation design»',
