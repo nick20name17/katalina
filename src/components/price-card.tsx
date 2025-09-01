@@ -12,9 +12,11 @@ import {
 import { nightSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import { Check, Heart } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import { DiscountInput } from './discount-input'
 import { Badge } from './ui/badge'
+import { ShinyButton } from './ui/shiny-button'
 
 export const PriceCard = ({ card }: { card: CardData }) => {
     const [success, setSuccess] = useState(false)
@@ -147,6 +149,52 @@ export const PriceCard = ({ card }: { card: CardData }) => {
                     comment={card.invoice.comment}
                     destination={card.invoice.destination}
                 />
+            </CardFooter>
+        </Card>
+    )
+}
+
+export const FreeCard = () => {
+    const router = useRouter()
+    return (
+        <Card
+            className={cn(
+                'w-full bg-[#FAF6F1] border-2 border-primary/30  break-inside-avoid shadow-lg relative z-10'
+            )}>
+            <div className="absolute bottom-4 left-4 text-primary/20">
+                <Heart className="w-6 h-6" />
+            </div>
+
+            <CardHeader className="text-center space-y-4 pb-6">
+                <div className="space-y-2">
+                    <CardTitle
+                        className={cn(
+                            'text-2xl font-semibold text-slate-700',
+                            nightSans.className
+                        )}>
+                        Сад ідей
+                    </CardTitle>
+                </div>
+
+                <span className="text-xl font-semibold text-slate-700">Безкоштовно</span>
+            </CardHeader>
+
+            <CardContent className="space-y-6">
+                <div className="space-y-4">
+                    <h3 className="text-sm text-slate-600">
+                        канал був створений для того, щоб кожна квіточка змогла знайти
+                        добриво для свого росту. тут буде безліч ідей для монтажу відео,
+                        які відгукуються мені й, сподіваюся, відгукнуться комусь із вас.
+                    </h3>
+                </div>
+            </CardContent>
+
+            <CardFooter className="pt-6 flex-col gap-3">
+                <ShinyButton
+                    className="w-full bg-primary h-11 hover:bg-primary/ text-slate-700 font-semibold py-3 rounded-lg transition-all duration-200 hover:shadow-md border-none "
+                    onClick={() => router.push('https://t.me/ideaflowergarden')}>
+                    Доєднатись
+                </ShinyButton>
             </CardFooter>
         </Card>
     )

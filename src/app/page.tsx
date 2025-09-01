@@ -1,4 +1,4 @@
-import { PriceCard } from '@/components/price-card'
+import { FreeCard, PriceCard } from '@/components/price-card'
 import { denistina } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 import { ReactNode } from 'react'
@@ -143,7 +143,16 @@ const HomePage = () => {
     return (
         <div className="container mx-auto max-w-screen-xl">
             <div className="min-h-screen bg-background py-8 lg:px-14 px-8 grid items-start grid-cols-[repeat(auto-fill,minmax(330px,1fr))] gap-10 ">
-                {cardData.map((card) => {
+                {cardData.slice(0, 1).map((card) => {
+                    return (
+                        <PriceCard
+                            card={card}
+                            key={card.id}
+                        />
+                    )
+                })}
+                <FreeCard />
+                {cardData.slice(1).map((card) => {
                     return (
                         <PriceCard
                             card={card}
