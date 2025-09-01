@@ -78,11 +78,11 @@ export const Countdown = ({ className, saleEndDate }: CountdownProps) => {
                         <div className="space-y-0.5">
                             <p className="text-sm font-medium">
                                 Встигни придбати лекцію «Animation design» по зниженій
-                                ціні за фідбек
+                                ціні
                             </p>
                             <p className="text-muted-foreground text-sm">
-                                Зараз ти можеш отримати доступ вигідніше та допомогти
-                                зробити продукт ще кращим.
+                                Зараз ти можеш отримати доступ до продукту якого більше не
+                                буде в продажу
                             </p>
                         </div>
                         <div className="divide-background bg-background font-medium font-mono flex items-center divide-x rounded-md text-sm tabular-nums w-fit">

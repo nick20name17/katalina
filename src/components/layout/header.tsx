@@ -20,7 +20,7 @@ export const Header = () => {
             </div>
             <Countdown
                 className="mx-auto w-full mt-10 relative z-50"
-                saleEndDate={new Date('2025-07-18T00:00:00')}
+                saleEndDate={new Date('2025-09-04T00:00:00')}
             />
         </header>
     )

@@ -59,7 +59,11 @@ export const PriceCard = ({ card }: { card: CardData }) => {
                                 800
                             </span> */}
                     <span className="text-4xl font-semibold text-slate-700">
-                        {success ? card.price - card.price * 0.1 : card.price}
+                        {success
+                            ? card.price - card.price * 0.1
+                            : card.discount
+                              ? card.price - card.discount
+                              : card.price}
                     </span>
                     <span className="text-slate-400">UAH</span>
                     <svg
@@ -81,6 +85,11 @@ export const PriceCard = ({ card }: { card: CardData }) => {
                     <div className="text-xs text-slate-500">
                         зросте до{' '}
                         <span className="font-semibold">{card.priceIncrease} UAH</span>
+                    </div>
+                ) : null}
+                {card.discount ? (
+                    <div className="text-xs text-slate-500 line-through">
+                        <span className="font-semibold">{card.price} UAH</span>
                     </div>
                 ) : null}
             </CardHeader>

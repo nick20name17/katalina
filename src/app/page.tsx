@@ -60,6 +60,7 @@ export interface CardData {
     title: string
     price: number
     priceIncrease?: number
+    discount?: number
     featuresHeader?: string
     features: string[]
     popular?: boolean
@@ -88,7 +89,7 @@ const cardData: CardData[] = [
             'мій особистий досвід;',
             'корисні матеріали',
         ],
-        bonus: ['пак для анімаційного монтажу у подарунок'],
+        bonus: ['пак для анімаційного монтажу у подарунок', 'Лекція «Animation design»'],
         invoice: {
             amount: 220000,
             redirectUrl: 'community',
@@ -100,7 +101,7 @@ const cardData: CardData[] = [
         id: 2,
         title: 'Лекція «Animation design»',
         price: 1500,
-        promocode: true,
+        discount: 500,
         featuresHeader:
             'Покрокова інструкція про те, як я створюю анімаційні відео від А до Я',
         features: [
@@ -117,7 +118,7 @@ const cardData: CardData[] = [
             'домашнє завдання + матеріали',
         ],
         invoice: {
-            amount: 150000,
+            amount: 100000,
             redirectUrl: 'animation',
             comment: 'Доступ до Лекції «Animation design»',
             destination: 'Доступ до Лекції «Animation design»',
