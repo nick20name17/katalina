@@ -1,6 +1,5 @@
 import { nightSans } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
-import { Countdown } from '../ui/countdown'
 
 export const Header = () => {
     return (
@@ -18,10 +17,10 @@ export const Header = () => {
                     </div>
                 </h1>
             </div>
-            <Countdown
+            {/* <Countdown
                 className="mx-auto w-full mt-10 relative z-50"
                 saleEndDate={new Date('2025-09-04T00:00:00')}
-            />
+            /> */}
         </header>
     )
 }
