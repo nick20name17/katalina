@@ -128,7 +128,7 @@ const cardData: CardData[] = [
         id: 1,
         title: 'Пак матеріалів для анімаційного монтажу',
         price: 1100,
-        features: ['футажі;', 'фони;', 'стікери'],
+        features: ['футажі;', 'фони;', 'стікери;', 'шрифти'],
         caption: <Caption />,
         invoice: {
             amount: 110000,
