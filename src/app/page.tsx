@@ -78,7 +78,7 @@ export interface CardData {
 const cardData: CardData[] = [
     {
         id: 0,
-        title: 'Телеграм-комʼюніті',
+        title: 'Телеграм-спільнота',
         price: 2200,
         popular: true,
         caption: <Caption2 />,
@@ -93,8 +93,8 @@ const cardData: CardData[] = [
         invoice: {
             amount: 220000,
             redirectUrl: 'community',
-            comment: 'Доступ до Телеграм-комʼюніті',
-            destination: 'Доступ до Телеграм-комʼюніті',
+            comment: 'Доступ до Телеграм-спільнота',
+            destination: 'Доступ до Телеграм-спільнота',
         },
     },
     // {
