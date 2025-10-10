@@ -102,7 +102,7 @@ const HomePage = () => {
         </ul>
       </section>
 
-      <section className='relative -mt-6'>
+      <section className=''>
         <h2 className='hidden'>Bachu Krasyvo</h2>
         <Image
           className='mx-auto'
