@@ -1,6 +1,10 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
-import { nightSans } from '@/lib/fonts'
+import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
+import { Button } from '@/components/ui/button'
+import { nightSans, pinyonScript } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
 
 const HomePage = () => {
@@ -53,6 +57,17 @@ const HomePage = () => {
           width={1200}
           height={630}
         />
+
+        <div className='mt-8 flex items-center justify-center'>
+          <Link href='/#community'>
+            <Button
+              className='w-64 uppercase'
+              variant='outline'
+            >
+              Доєднатися до спільноти
+            </Button>
+          </Link>
+        </div>
       </section>
 
       <section className='relative z-10 container mt-16'>
@@ -61,7 +76,7 @@ const HomePage = () => {
           <span className='text-right'>якщо ти хочеш:</span>
         </h2>
 
-        <ul className='mt-5 space-y-5 text-sm'>
+        <ul className='mt-5 space-y-5 border-t pt-4 text-sm'>
           <li>
             <div className='font-medium'>(01)</div>
             <p>
@@ -104,7 +119,7 @@ const HomePage = () => {
           <span className='text-right'>доєднавшись до спільноти:</span>
         </h2>
 
-        <ul className='mt-5 space-y-5 text-sm'>
+        <ul className='mt-5 space-y-5 border-t pt-4 text-sm'>
           <li>
             <div className='font-medium'>(01)</div>
             <p>Туторіали на мої відео та відео з пінтерест.</p>
@@ -141,6 +156,82 @@ const HomePage = () => {
             <p>Пожиттєвий доступ при разовій оплаті.</p>
           </li>
         </ul>
+      </section>
+
+      <section className='mt-16'>
+        <h2 className='hidden'>Bachu Krasyvo</h2>
+        <Image
+          className='w-full'
+          src='/images/cover_06.jpg'
+          alt=''
+          width={320}
+          height={203}
+        />
+      </section>
+
+      <section
+        className='container mt-15 scroll-mt-24 text-center'
+        id='community'
+      >
+        <h2 className='flex flex-col font-medium'>
+          <span className={cn(pinyonScript.className, 'text-[44px] leading-none')}>«Secret Garden»</span>
+        </h2>
+        <p className='px-4 text-sm text-pretty'>Доступ до спільноти. Один платіж — нескінченне натхнення</p>
+
+        <p className='mt-6 text-lg font-medium'>2200 грн</p>
+
+        <div className='mt-3 flex items-center justify-center'>
+          <CreateInvoiceBtn
+            amount={220000}
+            comment='Доступ до телеграм спільноти'
+            destination='Доступ до телеграм спільноти'
+          />
+        </div>
+      </section>
+
+      <section className='container mt-16'>
+        <div className='border-t pt-8'></div>
+        <h2 className='mr-12 flex flex-col items-start text-center'>
+          <span className='text-2xl leading-none uppercase'>Найпоширеніші</span>
+          <span className={cn(nightSans.className, 'text-3xl leading-none')}>запитання</span>
+        </h2>
+
+        <Accordion
+          type='single'
+          collapsible
+          className='w-full'
+        >
+          <AccordionItem value='item-1'>
+            <AccordionTrigger className='text-balance'>
+              Де взяти посилання на подарунки (лекцію та пак)?
+            </AccordionTrigger>
+            <AccordionContent>У спільноті, в одному із закріплених постів.</AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value='item-2'>
+            <AccordionTrigger>Чи потрібно вносити оплату кожен місяць?</AccordionTrigger>
+            <AccordionContent>Ні, оплата разова, а доступ назавжди.</AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value='item-3'>
+            <AccordionTrigger>
+              Чи можу я висловлювати побажання з приводу контенту на каналі?
+            </AccordionTrigger>
+            <AccordionContent>
+              Так, обовʼязково! В цьому весь сенс продукту — гнучкість. Всі зауваження та побажання приймаю в
+              особисті повідомлення в Instagram.
+            </AccordionContent>
+          </AccordionItem>
+
+          <AccordionItem value='item-4'>
+            <AccordionTrigger>Що входить у ваш супровід?</AccordionTrigger>
+            <AccordionContent>
+              Отримуючи доступ до комʼюніті, ви можете завжди написати мені в особисті: задавати будь-які
+              питання з приводу монтажу, надіслати відео на перевірку, отримати пораду чи пояснення — як саме
+              повторити мої прийоми.
+            </AccordionContent>
+          </AccordionItem>
+        </Accordion>
       </section>
     </>
   )

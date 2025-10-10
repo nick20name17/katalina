@@ -1,18 +1,19 @@
 'use client'
 
-import { Loader } from 'lucide-react'
+import { Loader2 } from 'lucide-react'
 import { useTransition } from 'react'
 import { toast } from 'sonner'
 
 import { Button } from '../ui/button'
 
 import { createInvoice } from '@/actions/create-invoice'
+import { cn } from '@/lib/utils'
 
 interface CreateInvoiceBtnProps {
   amount: number
   destination: string
   comment: string
-  redirectUrl: 'stickers' | 'community' | 'animation'
+  className?: string
 }
 export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
   const [isPending, startTransition] = useTransition()
@@ -27,10 +28,11 @@ export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
   }
   return (
     <Button
-      className='bg-primary hover:bg-primary/ h-11 w-full rounded-lg border-none py-3 font-semibold text-slate-700 transition-all duration-200 hover:shadow-md'
+      className={cn('w-40 uppercase', props.className)}
+      variant='outline'
       onClick={() => startTransition(handleClick)}
     >
-      {isPending ? <Loader className='text-background mx-auto size-4 animate-spin' /> : 'Онлайн оплата'}
+      {isPending ? <Loader2 className='mx-auto size-4 animate-spin text-lime-700' /> : 'Придбати'}
     </Button>
   )
 }

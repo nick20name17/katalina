@@ -8,19 +8,14 @@ interface CreateInvoiceProps {
   amount: number
   destination: string
   comment: string
-  redirectUrl: 'stickers' | 'community' | 'animation'
 }
 
-const REDIRECT_URL: Record<'stickers' | 'community' | 'animation', string> = {
-  community: process.env.REDIRECT_URL!,
-  stickers: process.env.REDIRECT_URL2!,
-  animation: process.env.REDIRECT_URL4!
-}
+const REDIRECT_URL = process.env.REDIRECT_URL!
 
-export async function createInvoice({ amount, destination, comment, redirectUrl }: CreateInvoiceProps) {
+export async function createInvoice({ amount, destination, comment }: CreateInvoiceProps) {
   const X_TOKEN = process.env.X_TOKEN
 
-  if (!X_TOKEN || !REDIRECT_URL[redirectUrl]) {
+  if (!X_TOKEN || !REDIRECT_URL) {
     throw new Error('Server misconfiguration')
   }
 
@@ -30,7 +25,7 @@ export async function createInvoice({ amount, destination, comment, redirectUrl 
       destination,
       comment
     },
-    redirectUrl: REDIRECT_URL[redirectUrl]
+    redirectUrl: REDIRECT_URL
   }
 
   try {
