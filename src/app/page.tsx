@@ -106,7 +106,7 @@ const HomePage = () => {
         <h2 className='hidden'>Bachu Krasyvo</h2>
         <Image
           className='mx-auto'
-          src='/images/cover_04.jpg'
+          src='/images/cover_04.png'
           alt=''
           width={320}
           height={203}
