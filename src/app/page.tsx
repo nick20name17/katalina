@@ -21,6 +21,17 @@ const HomePage = () => {
           width={1200}
           height={630}
         />
+        <div className='container mt-4 text-center text-sm'>
+          <span> Для того, щоб повністю поринути в атмосферу нашої спільноти включи </span>
+          <Link
+            className='text-lime-700 underline underline-offset-4 transition-colors'
+            target='_blank'
+            href='https://music.youtube.com/playlist?list=PL51GtoHHmKiVH5GD8ovehGJ5pS1o-tu8P&si=gzKwhdtO84txy9z0'
+          >
+            цей плейлист.
+          </Link>
+          <div className='border-b pb-8'></div>
+        </div>
       </section>
       <section className='container mt-8'>
         <h2
