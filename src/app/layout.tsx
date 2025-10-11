@@ -12,33 +12,10 @@ const montserrat = Montserrat({
   subsets: ['latin', 'latin-ext']
 })
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'
-
 export const metadata: Metadata = {
   title: 'Bachu Krasyvo',
   description:
-    'Навчальна спільнота для монтажерок — це простір, де панує girlhood vibe. Там я ділюся корисною інформацією, туторіалами, своїм баченням і знахідками. Доєднуючись, ви автоматично отримуєте послугу мого супроводу та ще кілька плюшок.',
-  openGraph: {
-    siteName: 'Bachu Krasyvo',
-    title: 'Bachu Krasyvo',
-    description:
-      'Навчальна спільнота для монтажерок — це простір, де панує girlhood vibe. Там я ділюся корисною інформацією, туторіалами, своїм баченням і знахідками. Доєднуючись, ви автоматично отримуєте послугу мого супроводу та ще кілька плюшок.',
-    locale: 'uk_UA',
-    type: 'website',
-    images: [
-      {
-        url: `${baseUrl}/og-image.png`,
-        width: 1200,
-        height: 630,
-        alt: 'Bachu Krasyvo'
-      }
-    ]
-  }
-  // icons: {
-  //   icon: '/favicon.png',
-  //   shortcut: '/favicon.png',
-  //   apple: '/favicon.png'
-  // }
+    'Навчальна спільнота для монтажерок — це простір, де панує girlhood vibe. Там я ділюся корисною інформацією, туторіалами, своїм баченням і знахідками. Доєднуючись, ви автоматично отримуєте послугу мого супроводу та ще кілька плюшок.'
 }
 
 const RootLayout = ({ children }: PropsWithChildren) => {
