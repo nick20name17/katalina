@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import { PropsWithChildren } from 'react'
@@ -60,6 +61,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <Header />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )
