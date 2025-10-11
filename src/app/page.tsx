@@ -40,7 +40,6 @@ const HomePage = () => {
         >
           I was created to create.
         </h2>
-
         <div className='mt-5 flex items-center justify-center gap-2 text-[13px] [&_*]:flex-1'>
           <div className='text-center'>(01)</div>
           <Image
@@ -145,7 +144,7 @@ const HomePage = () => {
           </li>
           <li>
             <div className='font-medium'>(04)</div>
-            <p>Ресурси, які я використовую сама і всім</p>
+            <p>Ресурси, які я використовую сама і всім раджу.</p>
           </li>
           <li>
             <div className='font-medium'>(05)</div>
