@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
   title: 'Social Media',
-  description: 'Social Media Page'
+  description: 'Доєднуйся до моїх соціальних мереж'
 }
 
 const SocialMediaPage = () => {
