@@ -25,7 +25,7 @@ const SocialMediaPage = () => {
             width={1200}
             height={630}
           />
-          <div className='text-background absolute bottom-6 left-4 text-xs'>@bachu.krasyvo</div>
+          {/* <div className='text-background absolute top-6 left-4 text-xs'>@bachu.krasyvo</div> */}
           <div className='text-background absolute right-4 bottom-6 max-w-40 text-right text-xs'>
             мої очі бачать красиво. твої також.
           </div>
