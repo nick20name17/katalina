@@ -4,8 +4,6 @@ import { Montserrat } from 'next/font/google'
 import { PropsWithChildren } from 'react'
 
 import './globals.css'
-import { Footer } from '@/components/layout/footer'
-import { Header } from '@/components/layout/header'
 
 const montserrat = Montserrat({
   weight: ['400', '500', '600', '700'],
@@ -35,9 +33,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         />
       </head>
       <body className={`${montserrat.className} antialiased`}>
-        <Header />
         <main>{children}</main>
-        <Footer />
         <Analytics />
       </body>
     </html>

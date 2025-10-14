@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { Footer } from '@/components/layout/footer'
+import { Header } from '@/components/layout/header'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { nightSans, pinyonScript } from '@/lib/fonts'
@@ -10,6 +12,7 @@ import { cn } from '@/lib/utils'
 const HomePage = () => {
   return (
     <>
+      <Header />
       <section className='container max-w-full px-0'>
         <h2 className='hidden'>Bachu Krasyvo</h2>
         <Image
@@ -168,7 +171,10 @@ const HomePage = () => {
         </ul>
       </section>
 
-      <section className='mt-16'>
+      <section
+        className='mt-16 scroll-mt-24'
+        id='community'
+      >
         <h2 className='hidden'>Bachu Krasyvo</h2>
         <Image
           className='w-full'
@@ -179,10 +185,7 @@ const HomePage = () => {
         />
       </section>
 
-      <section
-        className='container mt-15 scroll-mt-24 text-center'
-        id='community'
-      >
+      <section className='container mt-15 text-center'>
         <h2 className='flex flex-col font-medium'>
           <span className={cn(pinyonScript.className, 'text-[44px] leading-none')}>«Secret Garden»</span>
         </h2>
@@ -243,6 +246,7 @@ const HomePage = () => {
           </AccordionItem>
         </Accordion>
       </section>
+      <Footer />
     </>
   )
 }
