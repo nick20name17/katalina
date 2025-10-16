@@ -40,7 +40,7 @@ const SocialMediaPage = () => {
           />
         </div>
 
-        <div className='relative container mt-4 flex items-center justify-center gap-4'>
+        <div className='relative container mt-4 flex items-start justify-center gap-4'>
           <div className='absolute top-4 left-1/2 h-40 w-20 -translate-x-1/2 bg-[#FFFCF0]/80'></div>
 
           <div className='w-full max-w-50 space-y-4'>
@@ -87,6 +87,36 @@ const SocialMediaPage = () => {
               </Button>
             </Link>
           </div>
+        </div>
+      </section>
+      <section className='relative container mt-16 flex flex-col items-center justify-center gap-8'>
+        <h3 className='absolute top-28 left-10 text-sm'>(03)</h3>
+
+        <video
+          className='w-[55%]'
+          autoPlay
+          muted
+          loop
+          controls={false}
+          playsInline
+        >
+          <source src='/video/video_01.mov' />
+        </video>
+        <div className='space-y-4 text-center'>
+          <p className='text-sm text-pretty'>
+            Слухай мій подкаст «Квітни», у якому я обговорюю монтаж, особистий бренд та доходи.
+          </p>
+          <Link
+            href='https://www.patreon.com/bachukrasyvo?utm_campaign=creatorshare_creator'
+            target='_blank'
+          >
+            <Button
+              className='uppercase'
+              variant='outline'
+            >
+              Послухати
+            </Button>
+          </Link>
         </div>
       </section>
       <SocialMediaFooter />
