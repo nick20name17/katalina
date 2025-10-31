@@ -145,7 +145,8 @@ const PinterestPage = () => {
             <p className='text-lg font-medium'>1600 грн</p>
             <CreateInvoiceBtn
               className='mt-3'
-              amount={160000}
+              redirect='pinterest'
+              amount={16}
               comment='Доступ до телеграм спільноти'
               destination='Доступ до телеграм спільноти'
             />

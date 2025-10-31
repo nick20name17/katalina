@@ -2,20 +2,30 @@
 
 interface CreateInvoiceResponse {
   pageUrl: string
+  invoiceId: string
 }
 
 interface CreateInvoiceProps {
   amount: number
   destination: string
   comment: string
+  redirect?: 'pinterest' | 'comunity'
 }
 
-const REDIRECT_URL = process.env.REDIRECT_URL!
+const REDIRECT_URL_COMUNITY = process.env.REDIRECT_URL!
+const REDIRECT_URL_PINTEREST = process.env.REDIRECT_URL_PINTEREST!
 
-export async function createInvoice({ amount, destination, comment }: CreateInvoiceProps) {
+export async function createInvoice({
+  amount,
+  destination,
+  comment,
+  redirect = 'comunity'
+}: CreateInvoiceProps) {
   const X_TOKEN = process.env.X_TOKEN
 
-  if (!X_TOKEN || !REDIRECT_URL) {
+  const redirectUrl = redirect === 'pinterest' ? REDIRECT_URL_PINTEREST : REDIRECT_URL_COMUNITY
+
+  if (!X_TOKEN || !redirectUrl) {
     throw new Error('Server misconfiguration')
   }
 
@@ -25,7 +35,7 @@ export async function createInvoice({ amount, destination, comment }: CreateInvo
       destination,
       comment
     },
-    redirectUrl: REDIRECT_URL
+    redirectUrl: redirectUrl
   }
 
   try {

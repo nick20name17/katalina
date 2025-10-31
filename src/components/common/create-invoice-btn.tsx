@@ -14,12 +14,14 @@ interface CreateInvoiceBtnProps {
   destination: string
   comment: string
   className?: string
+  redirect?: 'pinterest' | 'comunity'
 }
 export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
   const [isPending, startTransition] = useTransition()
 
   const handleClick = async () => {
     const data = await createInvoice(props)
+
     if (data.pageUrl) {
       window.location.href = data.pageUrl
     } else {
