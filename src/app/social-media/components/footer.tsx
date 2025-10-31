@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { InstagramLink } from '@/components/layout/header'
+import { cn } from '@/lib/utils'
 
 export const SocialMediaFooter = () => {
   return (
@@ -16,12 +17,18 @@ export const SocialMediaFooter = () => {
         />
       </div>
 
-      <div className='mx-auto flex w-fit items-center gap-4'>
-        <PinterestLink />
-        <InstagramLink />
-        <TikTokLink />
-      </div>
+      <SocialLinks />
     </footer>
+  )
+}
+
+export const SocialLinks = ({ className }: { className?: string }) => {
+  return (
+    <div className={cn('mx-auto flex w-fit items-center gap-6', className)}>
+      <PinterestLink />
+      <InstagramLink />
+      <TikTokLink />
+    </div>
   )
 }
 

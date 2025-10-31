@@ -2,6 +2,7 @@ import Link from 'next/link'
 
 import { Logo } from '../common/logo'
 
+import { Nav } from './nav'
 import { cn } from '@/lib/utils'
 
 export const Header = () => {
@@ -11,7 +12,9 @@ export const Header = () => {
       <div className='flex flex-1 items-center justify-center whitespace-nowrap'>
         <Logo />
       </div>
-      <div className='flex-1'></div>
+      <div className='flex flex-1 justify-end'>
+        <Nav />
+      </div>
     </header>
   )
 }
