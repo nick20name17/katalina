@@ -116,7 +116,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-ring/50 tabular-nums;
+    @apply border-border outline-ring/50 tabular-nums !ring-0 !ring-offset-0 !outline-none;
   }
 
   html {

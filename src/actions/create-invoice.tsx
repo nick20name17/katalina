@@ -10,6 +10,7 @@ interface CreateInvoiceProps {
   destination: string
   comment: string
   redirect?: 'pinterest' | 'comunity'
+  promocode?: string
 }
 
 const REDIRECT_URL_COMUNITY = process.env.REDIRECT_URL!
@@ -19,7 +20,8 @@ export async function createInvoice({
   amount,
   destination,
   comment,
-  redirect = 'comunity'
+  redirect = 'comunity',
+  promocode
 }: CreateInvoiceProps) {
   const X_TOKEN = process.env.X_TOKEN
 
