@@ -147,8 +147,8 @@ const PinterestPage = () => {
               className='mt-3'
               redirect='pinterest'
               amount={160000}
-              comment='Доступ до телеграм спільноти'
-              destination='Доступ до телеграм спільноти'
+              comment='Доступ до «Pinterest Guide for Creators»'
+              destination='Доступ до «Pinterest Guide for Creators»'
             />
           </div>
         </div>
