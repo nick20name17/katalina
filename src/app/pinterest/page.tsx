@@ -151,12 +151,12 @@ const PinterestPage = () => {
 
             <div className='flex items-center justify-center gap-2'>
               <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>1600 грн</p>
-              <p className='mt-6 text-lg font-medium'>1120 грн</p>
+              <p className='mt-6 text-lg font-medium'>1280 грн</p>
             </div>
             <CreateInvoiceBtn
               className='mt-2'
               redirect='pinterest'
-              amount={112000}
+              amount={128000}
               comment='Доступ до «Pinterest Guide for Creators»'
               destination='Доступ до «Pinterest Guide for Creators»'
             />
