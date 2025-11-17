@@ -189,11 +189,15 @@ const HomePage = () => {
         </h2>
         <p className='px-4 text-sm text-pretty'>Доступ до спільноти. Один платіж — нескінченне натхнення</p>
 
-        <p className='mt-6 text-lg font-medium'>2200 грн</p>
+        <div className='flex items-center justify-center gap-2'>
+          <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>2200 грн</p>
+          <p className='mt-6 text-lg font-medium'>1540 грн</p>
+        </div>
 
         <div className='mt-3 flex items-center justify-center'>
           <CreateInvoiceBtn
-            amount={220000}
+            // amount={220000}
+            amount={154000}
             comment='Доступ до телеграм спільноти'
             destination='Доступ до телеграм спільноти'
           />
