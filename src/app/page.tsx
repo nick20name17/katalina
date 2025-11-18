@@ -191,13 +191,13 @@ const HomePage = () => {
 
         <div className='flex items-center justify-center gap-2'>
           <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>2200 грн</p>
-          <p className='mt-6 text-lg font-medium'>1760 грн</p>
+          <p className='mt-6 text-lg font-medium'>1870 грн</p>
         </div>
 
         <div className='mt-3 flex items-center justify-center'>
           <CreateInvoiceBtn
             // amount={220000}
-            amount={176000}
+            amount={187000}
             comment='Доступ до телеграм спільноти'
             destination='Доступ до телеграм спільноти'
           />
