@@ -231,7 +231,7 @@ const AdventPage = () => {
           <p className='relative text-[13px]'>
             А останній подаруночок буде 25.11 в Instagram{' '}
             <Link
-              href=''
+              href='https://www.instagram.com/bachu.krasyvo/'
               target='_blank'
             >
               @bachu.krasyvo
