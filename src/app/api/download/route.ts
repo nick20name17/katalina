@@ -18,7 +18,6 @@ export async function GET() {
       }
     })
   } catch (err) {
-    console.error('Download error:', err)
     return NextResponse.json({ error: 'File not found' }, { status: 404 })
   }
 }
