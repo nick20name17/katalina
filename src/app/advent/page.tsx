@@ -19,16 +19,16 @@ const AdventPage = () => {
         </div>
       </section>
       <section className='container mt-12 space-y-5 overflow-x-clip [&_a]:transition-transform [&_a]:hover:scale-105 [&_a]:active:scale-105'>
-        <div className='mx-auto flex w-fit gap-6 [&_a]:block'>
+        <div className='mx-auto flex w-fit gap-4 [&_a]:block'>
           <Link
             className='mt-4'
             href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-2bdf155d9ba58008a161d2ba1867053f?source=copy_link'
             target='_blank'
           >
             <Image
-              src='/images/advent/cover_01.png'
-              width={110}
-              height={110}
+              src='/images/advent/cover_01.jpeg'
+              width={120}
+              height={120}
               alt=''
             />
           </Link>
@@ -37,13 +37,13 @@ const AdventPage = () => {
             target='_blank'
           >
             <Image
-              src='/images/advent/cover_02.png'
+              src='/images/advent/cover_02.jpeg'
               width={130}
               height={150}
               alt=''
             />
           </Link>
-          <div className='active:animate-shake mt-10'>
+          <div className='active:animate-shake mt-6'>
             <Image
               src='/images/advent/cover_03.jpeg'
               width={110}
@@ -145,28 +145,28 @@ const AdventPage = () => {
           </div>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake relative left-4 shrink-0'>
+          <div className='active:animate-shake relative left-2 shrink-0'>
             <Image
-              src='/images/advent/cover_14.jpeg'
-              width={150}
+              src='/images/advent/cover_14.webp'
+              width={140}
               height={100}
               alt=''
             />
           </div>
-          <div className='relative top-12 -left-10'>
-            <div className='active:animate-shake relative left-4 shrink-0'>
+          <div className='relative top-8 -left-8'>
+            <div className='active:animate-shake relative left-2 shrink-0'>
               <Image
                 src='/images/advent/cover_15.png'
-                width={160}
-                height={160}
+                width={150}
+                height={150}
                 alt=''
               />
             </div>
-            <div className='active:animate-shake absolute top-16 -right-4 shrink-0 -rotate-20'>
+            <div className='active:animate-shake absolute top-14 -right-6 shrink-0 -rotate-20'>
               <Image
                 src='/images/advent/cover_16.png'
-                width={65}
-                height={65}
+                width={60}
+                height={60}
                 alt=''
               />
             </div>
@@ -199,15 +199,15 @@ const AdventPage = () => {
           </div>
         </div>
         <div className='mt-8 flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake relative top-20 shrink-0 pl-4'>
+          <div className='active:animate-shake relative top-20 shrink-0 pl-1'>
             <Image
               src='/images/advent/cover_20.jpeg'
-              width={250}
+              width={240}
               height={200}
               alt=''
             />
           </div>
-          <div className='active:animate-shake relative top-24 -left-10 shrink-0 rotate-20'>
+          <div className='active:animate-shake relative top-24 -left-8 shrink-0 rotate-20'>
             <Image
               src='/images/advent/cover_21.png'
               width={115}
