@@ -57,7 +57,11 @@ const AdventPage = () => {
           </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake mt-4'>
+          <Link
+            className='mt-4'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-4-23-2c1f155d9ba580c0bda3f0a5f2f8bad7?source=copy_link'
+            target='_blank'
+          >
             <Image
               className='w-full'
               src='/images/advent/cover_04.jpeg'
@@ -65,7 +69,7 @@ const AdventPage = () => {
               height={150}
               alt=''
             />
-          </div>
+          </Link>
           <div className='active:animate-shake rotate-20'>
             <Image
               src='/images/advent/cover_05.png'
