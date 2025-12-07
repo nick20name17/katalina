@@ -70,18 +70,14 @@ const AdventPage = () => {
               alt=''
             />
           </Link>
-          <Link
-            className='rotate-20'
-            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-5-23-2c2f155d9ba580f6a85ef6be50d0f498?source=copy_link'
-            target='_blank'
-          >
+          <div className='active:animate-shake rotate-20'>
             <Image
               src='/images/advent/cover_05.png'
               width={65}
               height={65}
               alt=''
             />
-          </Link>
+          </div>
           <div className='active:animate-shake relative top-5 right-7 -rotate-20'>
             <Image
               src='/images/advent/cover_06.png'
@@ -92,7 +88,11 @@ const AdventPage = () => {
           </div>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake w-full'>
+          <Link
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-5-23-2c2f155d9ba580f6a85ef6be50d0f498?source=copy_link'
+            target='_blank'
+            className='w-full'
+          >
             <Image
               className='w-full'
               src='/images/advent/cover_07.png'
@@ -100,7 +100,7 @@ const AdventPage = () => {
               height={150}
               alt=''
             />
-          </div>
+          </Link>
           <div className='active:animate-shake mt-6 w-full'>
             <Image
               className='w-full'
