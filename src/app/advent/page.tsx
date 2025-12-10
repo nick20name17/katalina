@@ -70,22 +70,30 @@ const AdventPage = () => {
               alt=''
             />
           </Link>
-          <div className='active:animate-shake rotate-20'>
+          <Link
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-6-23-2c5f155d9ba580569980ecf70d45392a?source=copy_link'
+            target='_blank'
+            className='rotate-20'
+          >
             <Image
               src='/images/advent/cover_05.png'
               width={65}
               height={65}
               alt=''
             />
-          </div>
-          <div className='active:animate-shake relative top-5 right-7 -rotate-20'>
+          </Link>
+          <Link
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-7-23-2c5f155d9ba580778245cc05e5ae3f1f?source=copy_link'
+            target='_blank'
+            className='relative top-5 right-7 block -rotate-20'
+          >
             <Image
               src='/images/advent/cover_06.png'
               width={80}
               height={80}
               alt=''
             />
-          </div>
+          </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
           <Link
@@ -101,7 +109,11 @@ const AdventPage = () => {
               alt=''
             />
           </Link>
-          <div className='active:animate-shake mt-6 w-full'>
+          <Link
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-8-23-2c5f155d9ba58083b79afdf9c41a6c3b?source=copy_link'
+            target='_blank'
+            className='mt-6 block w-full'
+          >
             <Image
               className='w-full'
               src='/images/advent/cover_08.png'
@@ -109,7 +121,7 @@ const AdventPage = () => {
               height={65}
               alt=''
             />
-          </div>
+          </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
           <div className='active:animate-shake shrink-0'>
