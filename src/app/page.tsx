@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-btn-with-promo'
 import { Footer } from '@/components/layout/footer'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
@@ -189,14 +189,20 @@ const HomePage = () => {
         </h2>
         <p className='px-4 text-sm text-pretty'>Доступ до спільноти. Один платіж — нескінченне натхнення</p>
 
-        <div className='flex items-center justify-center gap-2'>
-          {/* <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>2200 грн</p> */}
-          <p className='mt-6 text-lg font-medium'>2200 грн</p>
-        </div>
+        {/* <div className='flex items-center justify-center gap-2'>
+          <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>2200 грн</p>
+          <p className='mt-6 text-lg font-medium'>22000 грн</p>
+        </div> */}
 
         <div className='mt-3 flex items-center justify-center'>
-          <CreateInvoiceBtn
+          {/* <CreateInvoiceBtn
             amount={220000}
+            comment='Доступ до телеграм спільноти'
+            destination='Доступ до телеграм спільноти'
+          /> */}
+          <CreateInvoiceBtnWithPromo
+            amount={220000}
+            redirect='comunity'
             comment='Доступ до телеграм спільноти'
             destination='Доступ до телеграм спільноти'
           />

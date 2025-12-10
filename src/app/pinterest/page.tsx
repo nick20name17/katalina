@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-btn-with-promo'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { pinyonScript } from '@/lib/fonts'
@@ -149,11 +149,17 @@ const PinterestPage = () => {
               destination='Доступ до «Pinterest Guide for Creators»'
             /> */}
 
-            <div className='flex items-center justify-center gap-2'>
-              {/* <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>1600 грн</p> */}
-              <p className='mt-6 text-lg font-medium'>1600 грн</p>
-            </div>
-            <CreateInvoiceBtn
+            {/* <div className='flex items-center justify-center gap-2'> */}
+            {/* <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>1600 грн</p> */}
+            {/* <p className='mt-6 text-lg font-medium'>1600 грн</p> */}
+            {/* </div> */}
+            {/* <CreateInvoiceBtnWithPromo
+              amount={220000}
+              redirect='comunity'
+              comment='Доступ до телеграм спільноти'
+              destination='Доступ до телеграм спільноти'
+            /> */}
+            <CreateInvoiceBtnWithPromo
               className='mt-2'
               redirect='pinterest'
               amount={160000}
