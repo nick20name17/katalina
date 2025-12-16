@@ -124,14 +124,18 @@ const AdventPage = () => {
           </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake shrink-0'>
+          <Link
+            className='shrink-0'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-10-23-2cbf155d9ba5808a9bcff1e0cc7e61fd?source=copy_link'
+            target='_blank'
+          >
             <Image
               src='/images/advent/cover_10.png'
               width={150}
               height={100}
               alt=''
             />
-          </div>
+          </Link>
           <Link
             target='_blank'
             href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-9-23-2c6f155d9ba58061a78ad573dc616457?source=copy_link'
@@ -144,7 +148,11 @@ const AdventPage = () => {
               alt=''
             />
           </Link>
-          <div className='active:animate-shake relative top-9 right-12 mt-6 shrink-0 rotate-10'>
+          <Link
+            className='relative top-9 right-12 mt-6 shrink-0 rotate-10'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-11-23-2cbf155d9ba58098a056d52ce84f01e0?source=copy_link'
+            target='_blank'
+          >
             <Image
               className='w-full'
               src='/images/advent/cover_11.png'
@@ -152,25 +160,33 @@ const AdventPage = () => {
               height={65}
               alt=''
             />
-          </div>
+          </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
-          <div className='active:animate-shake relative -top-7 left-7 shrink-0'>
+          <Link
+            className='relative -top-7 left-7 shrink-0'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-12-23-2cbf155d9ba580e38a26f6ed9384daad?source=copy_link'
+            target='_blank'
+          >
             <Image
               src='/images/advent/cover_12.png'
               width={160}
               height={100}
               alt=''
             />
-          </div>
-          <div className='active:animate-shake relative top-10 -left-2 shrink-0'>
+          </Link>
+          <Link
+            className='relative top-10 -left-2 shrink-0'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-13-23-2cbf155d9ba580d487d5d3e420c6bfbd?source=copy_link'
+            target='_blank'
+          >
             <Image
               src='/images/advent/cover_13.png'
               width={170}
               height={170}
               alt=''
             />
-          </div>
+          </Link>
         </div>
         <div className='flex justify-between gap-6 [&_a]:block'>
           <div className='active:animate-shake relative left-2 shrink-0'>
