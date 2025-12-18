@@ -202,22 +202,30 @@ const AdventPage = () => {
             />
           </Link>
           <div className='relative top-8 -left-8'>
-            <div className='active:animate-shake relative left-2 shrink-0'>
+            <Link
+              className='relative left-2 shrink-0'
+              href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-15-23-2cdf155d9ba580838a1fd3c02c487237?source=copy_link'
+              target='_blank'
+            >
               <Image
                 src='/images/advent/cover_15.png'
                 width={150}
                 height={150}
                 alt=''
               />
-            </div>
-            <div className='active:animate-shake absolute top-14 -right-6 shrink-0 -rotate-20'>
+            </Link>
+            <Link
+              className='absolute top-14 -right-6 shrink-0 -rotate-20'
+              href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-Creators-16-23-2cdf155d9ba580be8289e49829d490be?source=copy_link'
+              target='_blank'
+            >
               <Image
                 src='/images/advent/cover_16.png'
                 width={60}
                 height={60}
                 alt=''
               />
-            </div>
+            </Link>
           </div>
         </div>
         <div className='relative flex justify-between gap-6 [&_a]:block'>

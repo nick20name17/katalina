@@ -77,7 +77,7 @@ export const Nav = () => {
                 className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
                 href='/advent'
               >
-                Advent Calendar
+                Advent Calendar 2025
               </Link>
             </li>
           </ul>
