@@ -13,8 +13,15 @@ const AdventPage = () => {
           <div>/для креаторів та монтажерів</div>
 
           <p className='mt-4 text-[13px]'>
-            Вирішила, що хочу трішки підняти різдвяний настрій вам, мої любі. З 03.11 по 25.11 заходьте на
-            сайт кожного дня та отримуйте свій подаруночок
+            Вирішила, що хочу підняти святковий настрій вам, мої любі. Тому з 03.12 по 25.12 можна отримати
+            приємні подаруночки. Слідкуйте за сторіс{' '}
+            <Link
+              className='transition-colors hover:text-lime-700'
+              href='https://www.instagram.com/bachu.krasyvo/'
+              target='_blank'
+            >
+              @bachu.krasyvo
+            </Link>
           </p>
         </div>
       </section>
