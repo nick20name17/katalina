@@ -248,14 +248,18 @@ const AdventPage = () => {
               alt=''
             />
           </Link>
-          <div className='active:animate-shake relative top-30 right-28 shrink-0 rotate-40'>
+          <Link
+            className='relative top-30 right-28 shrink-0 rotate-40'
+            target='_blank'
+            href='https://striped-coyote-b75.notion.site/Advent-Calendar-for-creators-18-23-2d1f155d9ba58093a236d0b315e08f61?source=copy_link'
+          >
             <Image
               src='/images/advent/cover_18.png'
               width={140}
               height={100}
               alt=''
             />
-          </div>
+          </Link>
           <div className='active:animate-shake relative top-12 -left-20 shrink-0'>
             <Image
               src='/images/advent/cover_19.jpeg'
