@@ -11,7 +11,7 @@ const LetterPage = () => {
   return (
     <section className='container mt-6'>
       <LetterCard />
-      <h1 className='mb-6 text-center text-sm uppercase'>Натисни на лист, люба!</h1>
+      <h1 className='mb-6 text-center text-sm uppercase'>Click on the Letter, Darling!</h1>
     </section>
   )
 }
