@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const LetterPage = () => {
   return (
     <section className='container mt-6'>
-      <h1 className='mb-6 text-lg font-medium'>Натисни на лист, люба!</h1>
+      <h1 className='mb-6 text-center text-lg font-medium'>Натисни на лист, люба!</h1>
       <LetterCard />
     </section>
   )
