@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,6 +7,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button'
 import { pinyonScript } from '@/lib/fonts'
 import { cn } from '@/lib/utils'
+
+export const metadata: Metadata = {
+  title: 'Pinteres Guide',
+  description: 'Тут зібрано все, що тобі потрібно знати про просування на Pinterest.'
+}
 
 const PinterestPage = () => {
   return (
