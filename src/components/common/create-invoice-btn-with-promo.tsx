@@ -19,6 +19,7 @@ interface CreateInvoiceBtnWithPromoProps {
   amount: number // original amount in cents
   destination: string
   comment: string
+  currency?: 'UAH' | 'USD'
   className?: string
   redirect?: 'pinterest' | 'comunity'
 }
@@ -32,12 +33,15 @@ export const CreateInvoiceBtnWithPromo = ({
   destination,
   comment,
   className,
-  redirect = 'comunity'
+  redirect = 'comunity',
+  currency
 }: CreateInvoiceBtnWithPromoProps) => {
   const form = useForm({
     defaultValues: { promo: '' },
     resolver: zodResolver(promoSchema)
   })
+
+  const currencyText = currency === 'UAH' ? 'грн' : '$'
 
   const [isPending, startTransition] = useTransition()
   const [checkingPromo, setCheckingPromo] = useState(false)
@@ -83,7 +87,7 @@ export const CreateInvoiceBtnWithPromo = ({
     <div className='flex flex-col gap-4 text-center'>
       <div className='flex items-center gap-2'>
         <p className='text-lg font-medium'>
-          {discountedAmount / 100} грн{' '}
+          {discountedAmount / 100} {currencyText}{' '}
           {/* {validPromo && <span className='text-sm text-lime-700'>(знижка 10%)</span>} */}
         </p>
         <Button

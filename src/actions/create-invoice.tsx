@@ -13,6 +13,11 @@ interface CreateInvoiceProps {
   promocode?: string
 }
 
+const CURRENCY = {
+  UAH: 980,
+  USD: 840
+}
+
 const REDIRECT_URL_COMUNITY = process.env.REDIRECT_URL!
 const REDIRECT_URL_PINTEREST = process.env.REDIRECT_URL_PINTEREST!
 
@@ -33,6 +38,7 @@ export async function createInvoice({
 
   const payload = {
     amount,
+    ccy: CURRENCY.USD,
     merchantPaymInfo: {
       destination,
       comment
