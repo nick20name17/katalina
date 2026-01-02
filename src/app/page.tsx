@@ -201,7 +201,7 @@ const HomePage = () => {
             destination='Доступ до телеграм спільноти'
           /> */}
           <CreateInvoiceBtnWithPromo
-            amount={5300}
+            amount={6000}
             redirect='comunity'
             comment='Доступ до телеграм спільноти'
             destination='Доступ до телеграм спільноти'

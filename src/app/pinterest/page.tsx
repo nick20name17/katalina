@@ -168,7 +168,7 @@ const PinterestPage = () => {
             <CreateInvoiceBtnWithPromo
               className='mt-2'
               redirect='pinterest'
-              amount={4200}
+              amount={4800}
               comment='Доступ до «Pinterest Guide for Creators»'
               destination='Доступ до «Pinterest Guide for Creators»'
             />
