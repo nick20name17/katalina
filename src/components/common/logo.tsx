@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { pinyonScript } from '@/lib/fonts'
@@ -9,7 +10,14 @@ export const Logo = () => {
       className={cn(pinyonScript.className, 'text-3xl leading-none')}
       href='/'
     >
-      Bachu Krasyvo
+      <Image
+        priority
+        className='relative top-1'
+        src='/favicon.png'
+        alt='Bachu Krasyvo'
+        width={120}
+        height={120}
+      />
     </Link>
   )
 }

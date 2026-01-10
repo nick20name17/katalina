@@ -80,6 +80,15 @@ export const Nav = () => {
                 Advent Calendar 2025
               </Link>
             </li>
+            <li>
+              <Link
+                onClick={() => setOpen(false)}
+                className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
+                href='/library'
+              >
+                Digital Library
+              </Link>
+            </li>
           </ul>
         </nav>
         <div className='overflow-clip py-10'>

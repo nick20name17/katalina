@@ -21,7 +21,7 @@ interface CreateInvoiceBtnWithPromoProps {
   comment: string
   currency?: 'UAH' | 'USD'
   className?: string
-  redirect?: 'pinterest' | 'comunity'
+  redirect?: 'pinterest' | 'comunity' | 'library'
 }
 
 const promoSchema = z.object({
@@ -85,13 +85,13 @@ export const CreateInvoiceBtnWithPromo = ({
 
   return (
     <div className='flex flex-col gap-4 text-center'>
-      <div className='flex items-center gap-2'>
+      <div className='flex items-center justify-center gap-2'>
         <p className='text-lg font-medium'>
           {discountedAmount / 100} {currencyText}{' '}
           {/* {validPromo && <span className='text-sm text-lime-700'>(знижка 10%)</span>} */}
         </p>
         <Button
-          className={cn('w-40 uppercase', className)}
+          className={cn('mt-0! w-40 uppercase', className)}
           variant='outline'
           onClick={() => startTransition(handleClick)}
           disabled={isPending}
