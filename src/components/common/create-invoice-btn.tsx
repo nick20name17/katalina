@@ -14,7 +14,7 @@ interface CreateInvoiceBtnProps {
   destination: string
   comment: string
   className?: string
-  redirect?: 'pinterest' | 'comunity' | 'library'
+  redirect?: 'pinterest' | 'comunity' | 'library' | 'club'
 }
 export const CreateInvoiceBtn = (props: CreateInvoiceBtnProps) => {
   const [isPending, startTransition] = useTransition()

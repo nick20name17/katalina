@@ -9,7 +9,7 @@ interface CreateInvoiceProps {
   amount: number
   destination: string
   comment: string
-  redirect?: 'pinterest' | 'comunity' | 'library'
+  redirect?: 'pinterest' | 'comunity' | 'library' | 'club'
   promocode?: string
 }
 
@@ -21,6 +21,7 @@ const CURRENCY = {
 const REDIRECT_URL_COMUNITY = process.env.REDIRECT_URL!
 const REDIRECT_URL_PINTEREST = process.env.REDIRECT_URL_PINTEREST!
 const REDIRECT_URL_LIBRARY = process.env.REDIRECT_URL_LIBRARY!
+const REDIRECT_URL_CLUB = process.env.REDIRECT_URL_VISUAL_CLUB!
 
 const getUrlRedirect = (redirect: string) => {
   switch (redirect) {
@@ -30,6 +31,8 @@ const getUrlRedirect = (redirect: string) => {
       return REDIRECT_URL_COMUNITY
     case 'library':
       return REDIRECT_URL_LIBRARY
+    case 'club':
+      return REDIRECT_URL_CLUB
     default:
       return REDIRECT_URL_COMUNITY
   }
@@ -39,8 +42,7 @@ export async function createInvoice({
   amount,
   destination,
   comment,
-  redirect = 'comunity',
-  promocode
+  redirect = 'comunity'
 }: CreateInvoiceProps) {
   const X_TOKEN = process.env.X_TOKEN
 
