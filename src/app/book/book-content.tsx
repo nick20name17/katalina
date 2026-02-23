@@ -165,7 +165,7 @@ export function BookContent() {
         <p className='mt-3 text-center text-[13px]'>{t.buySection.description[language]}</p>
         <div className='mt-6 flex flex-col items-center justify-center'>
           <CreateInvoiceBtnWithPromo
-            redirect={language === 'ua' ? 'book-ua' : 'book-en'}
+            redirect='book'
             amount={700}
             comment={t.buySection.comment[language]}
             destination={t.buySection.comment[language]}

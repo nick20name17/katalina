@@ -24,7 +24,7 @@ interface CreateInvoiceBtnWithPromoProps {
   comment: string
   currency?: 'UAH' | 'USD'
   className?: string
-  redirect?: 'pinterest' | 'comunity' | 'library' | 'club' | 'book-ua' | 'book-en'
+  redirect?: 'pinterest' | 'comunity' | 'library' | 'club' | 'book'
 }
 
 export const CreateInvoiceBtnWithPromo = ({
