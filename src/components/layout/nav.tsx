@@ -61,17 +61,8 @@ export const Nav = () => {
                 Сад ідей
               </Link>
             </li>
-            <li>
-              <Link
-                onClick={() => setOpen(false)}
-                className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
-                href='https://www.patreon.com/bachukrasyvo?utm_campaign=creatorshare_creator'
-                target='_blank'
-              >
-                Подкаст «Квітни»
-              </Link>
-            </li>
-            <li>
+
+            {/* <li>
               <Link
                 onClick={() => setOpen(false)}
                 className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
@@ -79,7 +70,7 @@ export const Nav = () => {
               >
                 Advent Calendar 2025
               </Link>
-            </li>
+            </li> */}
             <li>
               <Link
                 onClick={() => setOpen(false)}
@@ -87,6 +78,15 @@ export const Nav = () => {
                 href='/library'
               >
                 Digital Library
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setOpen(false)}
+                className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
+                href='/book'
+              >
+                Creators’ Sacred Book
               </Link>
             </li>
           </ul>
