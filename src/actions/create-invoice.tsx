@@ -9,7 +9,7 @@ interface CreateInvoiceProps {
   amount: number
   destination: string
   comment: string
-  redirect?: 'pinterest' | 'comunity' | 'library' | 'club'
+  redirect?: 'pinterest' | 'comunity' | 'library' | 'club' | 'book-ua' | 'book-en'
   promocode?: string
 }
 
@@ -22,6 +22,8 @@ const REDIRECT_URL_COMUNITY = process.env.REDIRECT_URL!
 const REDIRECT_URL_PINTEREST = process.env.REDIRECT_URL_PINTEREST!
 const REDIRECT_URL_LIBRARY = process.env.REDIRECT_URL_LIBRARY!
 const REDIRECT_URL_CLUB = process.env.REDIRECT_URL_VISUAL_CLUB!
+const REDIRECT_URL_BOOK_UA = process.env.REDIRECT_URL_BOOK_UA!
+const REDIRECT_URL_BOOK_EN = process.env.REDIRECT_URL_BOOK_EN!
 
 const getUrlRedirect = (redirect: string) => {
   switch (redirect) {
@@ -33,6 +35,10 @@ const getUrlRedirect = (redirect: string) => {
       return REDIRECT_URL_LIBRARY
     case 'club':
       return REDIRECT_URL_CLUB
+    case 'book-ua':
+      return REDIRECT_URL_BOOK_UA
+    case 'book-en':
+      return REDIRECT_URL_BOOK_EN
     default:
       return REDIRECT_URL_COMUNITY
   }

@@ -7,7 +7,7 @@ import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-bt
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { pinyonScript } from '@/lib/fonts'
-import { useLanguage, translations } from '@/lib/i18n'
+import { translations, useLanguage } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
 const t = translations.book
@@ -113,7 +113,10 @@ export function BookContent() {
         <h2>{t.whatIncluded[language]}</h2>
         <ul className='mt-4 space-y-1'>
           {t.features[language].map((feature, i) => (
-            <li key={i} className='text-sm'>
+            <li
+              key={i}
+              className='text-sm'
+            >
               {feature}
             </li>
           ))}
@@ -141,7 +144,10 @@ export function BookContent() {
         <h2 className='mt-6'>{t.forYouIf[language]}</h2>
         <ul className='mt-4 space-y-1'>
           {t.targetAudience[language].map((item, i) => (
-            <li key={i} className='text-sm'>
+            <li
+              key={i}
+              className='text-sm'
+            >
               {item}
             </li>
           ))}
@@ -156,12 +162,10 @@ export function BookContent() {
         <h2 className={cn(pinyonScript.className, 'mt-6 text-center text-[32px]')}>
           «Creators' Sacred Book»
         </h2>
-        <p className='mt-3 text-center text-[13px]'>
-          {t.buySection.description[language]}
-        </p>
+        <p className='mt-3 text-center text-[13px]'>{t.buySection.description[language]}</p>
         <div className='mt-6 flex flex-col items-center justify-center'>
           <CreateInvoiceBtnWithPromo
-            redirect='library'
+            redirect={language === 'ua' ? 'book-ua' : 'book-en'}
             amount={700}
             comment={t.buySection.comment[language]}
             destination={t.buySection.comment[language]}
@@ -179,7 +183,10 @@ export function BookContent() {
           className='w-full'
         >
           {t.faq.questions[language].map((faq, i) => (
-            <AccordionItem key={i} value={`item-${i + 1}`}>
+            <AccordionItem
+              key={i}
+              value={`item-${i + 1}`}
+            >
               <AccordionTrigger className='text-balance'>{faq.question}</AccordionTrigger>
               <AccordionContent>{faq.answer}</AccordionContent>
             </AccordionItem>

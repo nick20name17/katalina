@@ -13,7 +13,7 @@ import { Input } from '../ui/input'
 import { checkPromocode } from '@/actions/check-promocode'
 import { createInvoice } from '@/actions/create-invoice'
 import { FormControl, FormField, FormItem } from '@/components/ui/form'
-import { useLanguage, translations } from '@/lib/i18n'
+import { translations, useLanguage } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
 
 const t = translations.common
@@ -24,7 +24,7 @@ interface CreateInvoiceBtnWithPromoProps {
   comment: string
   currency?: 'UAH' | 'USD'
   className?: string
-  redirect?: 'pinterest' | 'comunity' | 'library'
+  redirect?: 'pinterest' | 'comunity' | 'library' | 'club' | 'book-ua' | 'book-en'
 }
 
 export const CreateInvoiceBtnWithPromo = ({
@@ -36,7 +36,7 @@ export const CreateInvoiceBtnWithPromo = ({
   currency
 }: CreateInvoiceBtnWithPromoProps) => {
   const { language } = useLanguage()
-  
+
   const promoSchema = z.object({
     promo: z.string().check(z.minLength(1, { error: t.promoRequired[language] }))
   })
