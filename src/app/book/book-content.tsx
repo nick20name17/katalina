@@ -162,7 +162,7 @@ export function BookContent() {
         <div className='mt-6 flex flex-col items-center justify-center'>
           <CreateInvoiceBtnWithPromo
             redirect='library'
-            amount={400}
+            amount={700}
             comment={t.buySection.comment[language]}
             destination={t.buySection.comment[language]}
           />
