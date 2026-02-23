@@ -13,7 +13,10 @@ import { Input } from '../ui/input'
 import { checkPromocode } from '@/actions/check-promocode'
 import { createInvoice } from '@/actions/create-invoice'
 import { FormControl, FormField, FormItem } from '@/components/ui/form'
+import { useLanguage, translations } from '@/lib/i18n'
 import { cn } from '@/lib/utils'
+
+const t = translations.common
 
 interface CreateInvoiceBtnWithPromoProps {
   amount: number // original amount in cents
@@ -24,10 +27,6 @@ interface CreateInvoiceBtnWithPromoProps {
   redirect?: 'pinterest' | 'comunity' | 'library'
 }
 
-const promoSchema = z.object({
-  promo: z.string().check(z.minLength(1, { error: 'Введіть промокод' }))
-})
-
 export const CreateInvoiceBtnWithPromo = ({
   amount,
   destination,
@@ -36,12 +35,18 @@ export const CreateInvoiceBtnWithPromo = ({
   redirect = 'comunity',
   currency
 }: CreateInvoiceBtnWithPromoProps) => {
+  const { language } = useLanguage()
+  
+  const promoSchema = z.object({
+    promo: z.string().check(z.minLength(1, { error: t.promoRequired[language] }))
+  })
+
   const form = useForm({
     defaultValues: { promo: '' },
     resolver: zodResolver(promoSchema)
   })
 
-  const currencyText = currency === 'UAH' ? 'грн' : '$'
+  const currencyText = currency === 'UAH' ? t.currency.ua : t.currency.en
 
   const [isPending, startTransition] = useTransition()
   const [checkingPromo, setCheckingPromo] = useState(false)
@@ -71,7 +76,7 @@ export const CreateInvoiceBtnWithPromo = ({
     const isValid = await checkPromocode(formData.promo)
 
     if (!isValid) {
-      form.setError('promo', { message: 'Промокод не вірний' })
+      form.setError('promo', { message: t.promoInvalid[language] })
       setDiscountedAmount(amount)
       setCheckingPromo(false)
       return
@@ -96,7 +101,7 @@ export const CreateInvoiceBtnWithPromo = ({
           onClick={() => startTransition(handleClick)}
           disabled={isPending}
         >
-          {isPending ? <Loader2 className='size-4 animate-spin text-lime-700' /> : 'Придбати'}
+          {isPending ? <Loader2 className='size-4 animate-spin text-lime-700' /> : t.buy[language]}
         </Button>
       </div>
       <Form {...form}>
@@ -113,7 +118,7 @@ export const CreateInvoiceBtnWithPromo = ({
                 <FormControl>
                   <Input
                     className='w-[213px]'
-                    placeholder='промокод'
+                    placeholder={t.promoPlaceholder[language]}
                     {...field}
                     disabled={checkingPromo || !!validPromo}
                   />

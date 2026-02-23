@@ -1,18 +1,26 @@
-import Link from 'next/link'
+'use client'
 
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+
+import { LanguageToggle } from '../common/language-toggle'
 import { Logo } from '../common/logo'
 
 import { Nav } from './nav'
 import { cn } from '@/lib/utils'
 
 export const Header = () => {
+  const pathname = usePathname()
+  const isBookPage = pathname?.startsWith('/book')
+
   return (
     <header className='bg-background sticky top-0 z-50 container flex h-18 items-center justify-center border-b'>
       <InstagramLink />
       <div className='flex flex-1 items-center justify-center whitespace-nowrap'>
         <Logo />
       </div>
-      <div className='flex flex-1 justify-end'>
+      <div className='flex flex-1 items-center justify-end gap-3'>
+        {isBookPage && <LanguageToggle />}
         <Nav />
       </div>
     </header>

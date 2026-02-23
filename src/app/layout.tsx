@@ -1,10 +1,11 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import { PropsWithChildren } from 'react'
+import { Suspense, type PropsWithChildren } from 'react'
 
 import './globals.css'
 import { Header } from '@/components/layout/header'
+import { LanguageProvider } from '@/lib/i18n'
 
 const montserrat = Montserrat({
   weight: ['400', '500', '600', '700'],
@@ -34,8 +35,12 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         />
       </head>
       <body className={`${montserrat.className} antialiased`}>
-        <Header />
-        <main>{children}</main>
+        <Suspense>
+          <LanguageProvider>
+            <Header />
+            <main>{children}</main>
+          </LanguageProvider>
+        </Suspense>
         <Analytics />
       </body>
     </html>
