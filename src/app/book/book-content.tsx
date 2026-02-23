@@ -56,7 +56,7 @@ export function BookContent() {
           />
         </div>
       </section>
-      <section className='container -mt-16 grid grid-cols-2 items-stretch gap-10 border-y py-8'>
+      <section className='relative z-50 container -mt-16 grid grid-cols-2 items-stretch gap-10 border-y py-8'>
         {/* Column 1 */}
         <div className='relative flex h-full flex-col space-y-3'>
           <div className='relative aspect-3/4 flex-1'>
