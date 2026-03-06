@@ -148,27 +148,14 @@ const PinterestPage = () => {
             клієнтів.
           </p>
           <div className='mt-6 flex flex-col items-center justify-center'>
-            {/* <CreateInvoiceBtnWithPromo
-              redirect='pinterest'
-              amount={160000}
-              comment='Доступ до «Pinterest Guide for Creators»'
-              destination='Доступ до «Pinterest Guide for Creators»'
-            /> */}
-
-            {/* <div className='flex items-center justify-center gap-2'> */}
-            {/* <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>1600 грн</p> */}
-            {/* <p className='mt-6 text-lg font-medium'>1600 грн</p> */}
-            {/* </div> */}
-            {/* <CreateInvoiceBtnWithPromo
-              amount={220000}
-              redirect='comunity'
-              comment='Доступ до телеграм спільноти'
-              destination='Доступ до телеграм спільноти'
-            /> */}
+            {/* <div className='flex items-center justify-center gap-2'>
+              <p className='text-lg font-medium'>48 $</p>
+            </div> */}
             <CreateInvoiceBtnWithPromo
               className='mt-2'
               redirect='pinterest'
               amount={4800}
+              currency='USD'
               comment='Доступ до «Pinterest Guide for Creators»'
               destination='Доступ до «Pinterest Guide for Creators»'
             />

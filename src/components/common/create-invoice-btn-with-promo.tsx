@@ -83,7 +83,7 @@ export const CreateInvoiceBtnWithPromo = ({
     }
 
     setValidPromo(formData.promo)
-    setDiscountedAmount(Math.round(amount * 0.9))
+    setDiscountedAmount(Math.round(amount * 0.85))
     form.clearErrors('promo')
     setCheckingPromo(false)
   }
@@ -93,7 +93,7 @@ export const CreateInvoiceBtnWithPromo = ({
       <div className='flex items-center justify-center gap-2'>
         <p className='text-lg font-medium'>
           {discountedAmount / 100} {currencyText}{' '}
-          {/* {validPromo && <span className='text-sm text-lime-700'>(знижка 10%)</span>} */}
+          {/* {validPromo && <span className='text-sm text-lime-700'>(знижка 15%)</span>} */}
         </p>
         <Button
           className={cn('mt-0! w-40 uppercase', className)}
@@ -146,3 +146,4 @@ export const CreateInvoiceBtnWithPromo = ({
     </div>
   )
 }
+

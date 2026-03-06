@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-btn-with-promo'
 import { Footer } from '@/components/layout/footer'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
@@ -191,18 +191,14 @@ const HomePage = () => {
 
         <div className='flex items-center justify-center gap-2'>
           {/* <p className='text-muted-foreground mt-6 text-sm font-medium line-through'>2200 грн</p> */}
-          <p className='mt-6 text-lg font-medium'>60 $</p>
+          {/* <p className='mt-6 text-lg font-medium'>60 $</p> */}
         </div>
 
         <div className='mt-3 flex items-center justify-center'>
-          {/* <CreateInvoiceBtn
-            amount={220000}
-            comment='Доступ до телеграм спільноти'
-            destination='Доступ до телеграм спільноти'
-          /> */}
-          <CreateInvoiceBtn
+          <CreateInvoiceBtnWithPromo
             amount={6000}
             redirect='comunity'
+            currency='USD'
             comment='Доступ до телеграм спільноти'
             destination='Доступ до телеграм спільноти'
           />
