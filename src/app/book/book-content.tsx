@@ -56,7 +56,7 @@ export function BookContent() {
           />
         </div>
       </section>
-      <section className='relative z-50 container -mt-16 grid grid-cols-2 items-stretch gap-10 border-y py-8'>
+      <section className='relative z-40 container -mt-16 grid grid-cols-2 items-stretch gap-10 border-y py-8'>
         {/* Column 1 */}
         <div className='relative flex h-full flex-col space-y-3'>
           <div className='relative aspect-3/4 flex-1'>
@@ -79,7 +79,7 @@ export function BookContent() {
             <div>{t.author1Role[language]}</div>
           </div>
 
-          <div className='absolute top-1/2 -right-8 -translate-y-1/2 text-xs'>(01)</div>
+          <div className='absolute top-1/2 -right-8 -translate-y-1/2 text-xs'>01.</div>
         </div>
 
         {/* Column 2 */}
@@ -95,7 +95,7 @@ export function BookContent() {
               </a>
               <div>{t.author2Role[language]}</div>
             </div>
-            <div className='pb-2 text-xs'>(02)</div>
+            <div className='pb-2 text-xs'>02.</div>
           </div>
 
           <div className='relative flex-1'>

@@ -41,8 +41,8 @@ const HomePage = () => {
         >
           I was created to create.
         </h2>
-        <div className='mt-5 flex items-center justify-center gap-2 text-[13px] [&_*]:flex-1'>
-          <div className='text-center'>(01)</div>
+        <div className='mt-5 flex items-center justify-center gap-2 text-[13px] **:flex-1'>
+          <div className='text-center'>01.</div>
           <Image
             src='/images/cover_02.jpg'
             alt=''
@@ -89,22 +89,22 @@ const HomePage = () => {
 
         <ul className='mt-5 space-y-5 border-t pt-4 text-sm'>
           <li>
-            <div className='font-medium'>(01)</div>
+            <div className='font-medium'>01.</div>
             <p>
               Навчитись створювати унікальні відео, які будуть виділятися серед інших, запам'ятовуватися та
               приносити чудових клієнтів.
             </p>
           </li>
           <li>
-            <div className='font-medium'>(02)</div>
+            <div className='font-medium'>02.</div>
             <p>Мислити нестандартно та креативно.</p>
           </li>
           <li>
-            <div className='font-medium'>(03)</div>
+            <div className='font-medium'>03.</div>
             <p>Надихатися щодня та розвивати надивленість, яка є основою творчості.</p>
           </li>
           <li>
-            <div className='font-medium'>(04)</div>
+            <div className='font-medium'>04.</div>
             <p>
               Мати наставницю (мене), яка може допомогти та проконсультувати по будь-якому питанню, яке
               стосується монтажу.
@@ -132,38 +132,38 @@ const HomePage = () => {
 
         <ul className='mt-5 space-y-5 border-t pt-4 text-sm'>
           <li>
-            <div className='font-medium'>(01)</div>
+            <div className='font-medium'>01.</div>
             <p>Туторіали на мої відео та відео з пінтерест.</p>
           </li>
           <li>
-            <div className='font-medium'>(02)</div>
+            <div className='font-medium'>02.</div>
             <p>Розбори профілів блогерів, інфлюенсерів та експертів.</p>
           </li>
           <li>
-            <div className='font-medium'>(03)</div>
+            <div className='font-medium'>03.</div>
             <p>Подкаст «Квітни», де я говорю про монтаж і не тільки.</p>
           </li>
           <li>
-            <div className='font-medium'>(04)</div>
+            <div className='font-medium'>04.</div>
             <p>Ресурси, які я використовую сама і всім раджу.</p>
           </li>
           <li>
-            <div className='font-medium'>(05)</div>
+            <div className='font-medium'>05.</div>
             <p>
               Спілкування та супровід від мене (я завжди на звʼязку і можу відповісти на будь-які ваші
               запитання та проконсультувати).
             </p>
           </li>
           <li>
-            <div className='font-medium'>(06)</div>
+            <div className='font-medium'>06.</div>
             <p>Special пропозиції на мої подальші продукти.</p>
           </li>
           <li>
-            <div className='font-medium'>(07)</div>
+            <div className='font-medium'>07.</div>
             <p>Подарунки: лекція «Animation Design», пак матеріалів з 1000+ елементів.</p>
           </li>
           <li>
-            <div className='font-medium'>(08)</div>
+            <div className='font-medium'>08.</div>
             <p>Пожиттєвий доступ при разовій оплаті.</p>
           </li>
         </ul>

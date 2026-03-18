@@ -42,7 +42,7 @@ const SocialMediaPage = () => {
           <div className='absolute top-4 left-1/2 h-40 w-20 -translate-x-1/2 bg-[#FFFCF0]/80'></div>
 
           <div className='w-full max-w-50 space-y-4'>
-            <h3 className='text-sm'>(01)</h3>
+            <h3 className='text-sm'>01.</h3>
             <div className='aspect-square w-full bg-gray-200'>
               <Image
                 src='/images/cover_08.jpg'
@@ -63,7 +63,7 @@ const SocialMediaPage = () => {
           </div>
 
           <div className='w-full max-w-50 space-y-4'>
-            <h3 className='text-sm'>(02)</h3>
+            <h3 className='text-sm'>02.</h3>
             <div className='aspect-square w-full bg-gray-200'>
               <Image
                 src='/images/cover_09.jpg'
@@ -88,7 +88,7 @@ const SocialMediaPage = () => {
         </div>
       </section>
       <section className='relative container mt-16 flex flex-col items-center justify-center gap-8'>
-        <h3 className='absolute top-28 left-10 text-sm'>(03)</h3>
+        <h3 className='absolute top-28 left-10 text-sm'>03.</h3>
 
         <video
           className='w-[55%]'

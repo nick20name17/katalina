@@ -46,26 +46,26 @@ export const translations = {
     },
     features: {
       en: [
-        '(01) How to work with references, not just save them;',
-        '(02) How to look at a frame: light, depth, movement, pause;',
-        '(03) How to understand why a reference catches your eye;',
-        '(04) How not to copy, but to interpret;',
-        '(05) Trends vs timeless style;',
-        '(06) Which trends can be used without harm;',
-        '(07) Why blindly following trends kills style;',
-        '(08) How to work when there is no inspiration;',
-        '(09) Collection of seasonal references'
+        '01. How to work with references, not just save them',
+        '02. How to look at a frame: light, depth, movement, pause',
+        '03. How to understand why a reference catches your eye',
+        '04. How not to copy, but to interpret',
+        '05. Trends vs timeless style',
+        '06. Which trends can be used without harm',
+        '07. Why blindly following trends kills style',
+        '08. How to work when there is no inspiration',
+        '09. Collection of seasonal references'
       ],
       ua: [
-        '(01) Як працювати з референсами, а не просто зберігати;',
-        '(02) Як дивитись на кадр: світло, глибина, рух, пауза;',
-        '(03) Як зрозуміти, чому референс чіпляє;',
-        '(04) Як не копіювати, а інтерпретувати;',
-        '(05) Тренди vs позачасовий стиль;',
-        '(06) Які тренди можна використовувати без шкоди;',
-        '(07) Чому сліпе слідування трендам вбиває стиль;',
-        '(08) Як працювати, коли немає натхнення;',
-        '(09) Збірка сезонних референсів'
+        '01. Як працювати з референсами, а не просто зберігати',
+        '02. Як дивитись на кадр: світло, глибина, рух, пауза',
+        '03. Як зрозуміти, чому референс чіпляє',
+        '04. Як не копіювати, а інтерпретувати',
+        '05. Тренди vs позачасовий стиль',
+        '06. Які тренди можна використовувати без шкоди',
+        '07. Чому сліпе слідування трендам вбиває стиль',
+        '08. Як працювати, коли немає натхнення',
+        '09. Збірка сезонних референсів'
       ]
     },
     buyButton: {
