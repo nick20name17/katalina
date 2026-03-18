@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { SocialMediaFooter } from './components/footer'
+import { HashLink } from '@/components/common/hash-link'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
@@ -52,14 +53,14 @@ const SocialMediaPage = () => {
               />
             </div>
             <p className='text-sm'>Закрита начальна спільнота для монтажерок.</p>
-            <Link href='/#community'>
+            <HashLink href='/#community'>
               <Button
                 className='uppercase'
                 variant='outline'
               >
                 Доєднатися
               </Button>
-            </Link>
+            </HashLink>
           </div>
 
           <div className='w-full max-w-50 space-y-4'>

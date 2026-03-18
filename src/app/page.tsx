@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { CreateInvoiceBtn } from '@/components/common/create-invoice-btn'
+import { HashLink } from '@/components/common/hash-link'
 import { Footer } from '@/components/layout/footer'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
@@ -70,14 +71,14 @@ const HomePage = () => {
         />
 
         <div className='mt-8 flex items-center justify-center'>
-          <Link href='/#community'>
+          <HashLink href='/#community'>
             <Button
               className='w-64 uppercase'
               variant='outline'
             >
               Доєднатися до спільноти
             </Button>
-          </Link>
+          </HashLink>
         </div>
       </section>
 

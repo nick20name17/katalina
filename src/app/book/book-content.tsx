@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-btn-with-promo'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
@@ -14,6 +13,18 @@ const t = translations.book
 
 export function BookContent() {
   const { language } = useLanguage()
+
+  const scrollToBuy = () => {
+    const el = document.getElementById('buy')
+    if (!el) return
+
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+    // Ensure URL updates even if hash is already "#buy"
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', '#buy')
+    }
+  }
 
   return (
     <>
@@ -123,14 +134,13 @@ export function BookContent() {
         </ul>
 
         <div className='mt-8 flex items-center justify-center'>
-          <Link href='/book/#buy'>
-            <Button
-              className='w-64 uppercase'
-              variant='outline'
-            >
-              {t.buyButton[language]}
-            </Button>
-          </Link>
+          <Button
+            className='w-64 uppercase'
+            variant='outline'
+            onClick={scrollToBuy}
+          >
+            {t.buyButton[language]}
+          </Button>
         </div>
       </section>
 

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
 import { CreateInvoiceBtnWithPromo } from '@/components/common/create-invoice-btn-with-promo'
+import { HashLink } from '@/components/common/hash-link'
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
 import { pinyonScript } from '@/lib/fonts'
@@ -54,14 +54,14 @@ const PinterestPage = () => {
         </ul>
 
         <div className='mt-8 flex items-center justify-center'>
-          <Link href='/pinterest/#guide'>
+          <HashLink href='/pinterest/#guide'>
             <Button
               className='w-64 uppercase'
               variant='outline'
             >
               Придбати гайд
             </Button>
-          </Link>
+          </HashLink>
         </div>
       </section>
 
