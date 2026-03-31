@@ -1,14 +1,7 @@
-import { Metadata } from 'next'
-
-import { BookContent } from './book-content'
-
-export const metadata: Metadata = {
-  title: "Creators' Sacred Book",
-  description: 'Secrets of visual development and content creation'
-}
+import { redirect } from 'next/navigation'
 
 const BookPage = () => {
-  return <BookContent />
+  redirect('/')
 }
 
 export default BookPage

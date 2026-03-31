@@ -80,15 +80,15 @@ export const Nav = () => {
                 Digital Library
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 onClick={() => setOpen(false)}
-                className='block py-3 text-[17px] uppercase transition-colors hover:text-lime-700'
-                href='/book'
+                className=’block py-3 text-[17px] uppercase transition-colors hover:text-lime-700’
+                href=’/book’
               >
                 Creators’ Sacred Book
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className='overflow-clip py-10'>
